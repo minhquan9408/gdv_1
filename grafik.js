@@ -43,3 +43,9 @@ var beispiel2 = {
     y: { field: "b", type: "quantitative" }
   }
 };
+
+var kreis = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  data: { url: "data/amsterdam-alle.csv" },
+  mark: "arc"
+};
