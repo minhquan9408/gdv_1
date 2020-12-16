@@ -1,0 +1,530 @@
+[
+  {
+    "anzahl": 1049,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 1459,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 1837,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 1579,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 3136,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 2490,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 2757,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 2214,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 2167,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 1357,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 888,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 2500,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 2555,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2766,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 1452,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2224,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2682,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 1766,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 2361,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 7131,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 9067,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 9143,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 360,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 350,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 384,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 338,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 809,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 430,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 405,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 246,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 427,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 424,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 266,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 625,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 363,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 434,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 390,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 376,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 430,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 380,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 408,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 1353,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 1545,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 1430,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 436,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 534,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 766,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 3862,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 2935,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 8962,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 5224,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 2194,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 3725,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 801,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 500,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 1227,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 1860,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2374,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 530,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 931,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2615,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 948,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 2536,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 454,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 364,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 271,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 618,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 889,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 2523,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 6591,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 5014,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 12165,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 8875,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 3076,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 8435,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 991,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 498,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 2689,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 3949,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 5085,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 1338,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 2316,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 3549,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 2529,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 3494,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 733,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 655,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 674,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 4119,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 4413,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 4083,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 3872,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 7380,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 5473,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 4990,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 2818,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 5892,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 4467,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 5042,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 6174,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 4075,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 4483,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 3678,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 3699,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 4766,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 3887,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 4873,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 8013,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 8465,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 7051,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 12505,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 11326,
+    "stadtbezirke": "A Centrum"
+  },
+  {
+    "anzahl": 7939,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 5737,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 15996,
+    "stadtbezirke": "E West"
+  },
+  {
+    "anzahl": 5905,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 5449,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 4054,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 7974,
+    "stadtbezirke": "F Nieuw-West"
+  },
+  {
+    "anzahl": 14614,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 7128,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 14680,
+    "stadtbezirke": "K Zuid"
+  },
+  {
+    "anzahl": 6502,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 7144,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 6809,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 4712,
+    "stadtbezirke": "M Oost"
+  },
+  {
+    "anzahl": 4331,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 4122,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 3843,
+    "stadtbezirke": "N Noord"
+  },
+  {
+    "anzahl": 2850,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 3062,
+    "stadtbezirke": "T Zuidoost"
+  },
+  {
+    "anzahl": 3834,
+    "stadtbezirke": "T Zuidoost"
+  }
+]

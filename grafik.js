@@ -24,28 +24,154 @@ var beispiel1 = {
 var beispiel2 = {
   $schema: "https://vega.github.io/schema/vega-lite/v4.json",
 
-  data: {
-    values: [
-      { a: "C", b: 2 },
-      { a: "C", b: 7 },
-      { a: "C", b: 4 },
-      { a: "D", b: 1 },
-      { a: "D", b: 2 },
-      { a: "D", b: 6 },
-      { a: "E", b: 8 },
-      { a: "E", b: 4 },
-      { a: "E", b: 7 }
-    ]
-  },
-  mark: "point",
+  data: { url : "kreis.json"},
+  mark: "arc",
   encoding: {
-    x: { field: "a", type: "nominal" },
-    y: { field: "b", type: "quantitative" }
+    color: { field: "stadtbezirke", type: "nominal" },
+    theta: { field: "anzahl", type: "quantitative", aggregate: "sum"}
+  },
+
+view: {stroke: null}
+};
+
+var bar = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+
+  data: { url : "kreis.json"},
+  mark: "bar",
+  encoding: {
+    x: { field: "stadtbezirke", type: "nominal" },
+    y: { field: "anzahl", type: "quantitative", aggragate: "sum" }
+  },
+
+};
+
+
+var map = {
+  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+  description: "the population per state, engineers per state, and hurricanes per state",
+  repeat: {"row": ["population", "engineers", "hurricanes"]},
+  resolve: {
+    scale: {
+      color: "independent"
+    }
+  },
+  spec: {
+    width: 500,
+    height: 300,
+    data: {
+      url: "data/population_engineers_hurricanes.csv"
+    },
+    transform: [
+      {
+        lookup: "id",
+        from: {
+          data: {
+          url: "data/us-10m.json",
+            format: {
+              type: "topojson",
+              feature: "states"
+            }
+          },
+          key: "id"
+        },
+        as: "geo"
+      }
+    ],
+    projection: {type: "albersUSA"},
+    mark: "geoshape",
+    encoding: {
+      shape: {
+        field: "geo",
+        type: "geojson"
+      },
+      color: {
+        field: {"repeat": "row"},
+        type: "quantitative"
+      }
+    }
   }
 };
 
-var kreis = {
-  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
-  data: { url: "data/amsterdam-alle.csv" },
-  mark: "arc"
+
+var map2 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://maps-amherstma.opendata.arcgis.com/datasets/d887750c3b4a40c09e753642988e7aee_0.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "properties.TotalAssessment",
+      "type": "quantitative"
+    }
+  }
 };
+ var map3 =
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "data/income.json"
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "data/us-10m.json",
+          "format": {
+            "type": "topojson",
+            "feature": "states"
+          }
+        },
+        "key": "id"
+      },
+      "as": "geo"
+    }
+  ],
+  "projection": {"type": "albersUsa"},
+  "mark": "geoshape",
+  "encoding": {
+    "shape": {"field": "geo", "type": "geojson"},
+    "color": {"field": "pct", "type": "quantitative"},
+    "row": {"field": "group"}
+  }
+};
+var map4=
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://opendata.arcgis.com/datasets/686603e943f948acaa13fb5d2b0f1275_3.geojson",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "properties.lad16nm",
+        "oneOf": [
+          "Bolton",
+          "Bury",
+          "Manchester",
+          "Oldham",
+          "Rochdale",
+          "Salford",
+          "Stockport",
+          "Tameside",
+          "Trafford",
+          "Wigan"
+        ]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": "geoshape"
+}
