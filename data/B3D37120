@@ -1,0 +1,23 @@
+﻿Jahr;Gebiet-Schlüssel;Variabel;Anzahl;Stadtteil;Stadtbezirke;Dimension
+2019;DX01;BEVTOTAAL;43543;DX01 Centrum-West;A Centrum;Bevölkerung
+2019;DX02;BEVTOTAAL;43319;DX02 Centrum-Oost;A Centrum;Bevölkerung
+2019;DX03;BEVTOTAAL;37143;DX03 Westerpark;E West;Bevölkerung
+2019;DX04;BEVTOTAAL;35501;DX04 Bos en Lommer;E West;Bevölkerung
+2019;DX05;BEVTOTAAL;73264;DX05 Oud-West, De Baarsjes;E West;Bevölkerung
+2019;DX06;BEVTOTAAL;46913;DX06 Geuzenveld, Slotermeer, Sloterdijken;F Nieuw-West;Bevölkerung
+2019;DX07;BEVTOTAAL;39328;DX07 Osdorp;F Nieuw-West;Bevölkerung
+2019;DX08;BEVTOTAAL;28508;DX08 De Aker, Sloten, Nieuw-Sloten;F Nieuw-West;Bevölkerung
+2019;DX09;BEVTOTAAL;43215;DX09 Slotervaart;F Nieuw-West;Bevölkerung
+2019;DX10;BEVTOTAAL;54444;DX10 Oud-Zuid;K Zuid;Bevölkerung
+2019;DX11;BEVTOTAAL;26642;DX11 Buitenveldert, Zuidas;K Zuid;Bevölkerung
+2019;DX12;BEVTOTAAL;64880;DX12 De Pijp, Rivierenbuurt;K Zuid;Bevölkerung
+2019;DX13;BEVTOTAAL;36162;DX13 Oud-Oost;M Oost;Bevölkerung
+2019;DX14;BEVTOTAAL;41526;DX14 Indische Buurt, Oostelijk Havengebied;M Oost;Bevölkerung
+2019;DX15;BEVTOTAAL;35241;DX15 Watergraafsmeer;M Oost;Bevölkerung
+2019;DX16;BEVTOTAAL;27371;DX16 IJburg, Zeeburgereiland;M Oost;Bevölkerung
+2019;DX17;BEVTOTAAL;38320;DX17 Noord-West;N Noord;Bevölkerung
+2019;DX18;BEVTOTAAL;29396;DX18 Oud-Noord;N Noord;Bevölkerung
+2019;DX19;BEVTOTAAL;29484;DX19 Noord-Oost;N Noord;Bevölkerung
+2019;DX20;BEVTOTAAL;24902;DX20 Bijlmer-Centrum, Amstel III;T Zuidoost;Bevölkerung
+2019;DX21;BEVTOTAAL;29481;DX21 Bijlmer-Oost;T Zuidoost;Bevölkerung
+2019;DX22;BEVTOTAAL;34227;DX22 Gaasperdam, Driemond;T Zuidoost;Bevölkerung

@@ -24,7 +24,7 @@ var beispiel1 = {
 var beispiel2 = {
   $schema: "https://vega.github.io/schema/vega-lite/v4.json",
 
-  data: { url : "kreis.json"},
+  data: { url : "data/kreis.json"},
   mark: "arc",
   encoding: {
     color: { field: "stadtbezirke", type: "nominal" },
@@ -37,7 +37,7 @@ view: {stroke: null}
 var bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v4.json",
 
-  data: { url : "kreis.json"},
+  data: { url : "data/kreis.json"},
   mark: "bar",
   encoding: {
     x: { field: "stadtbezirke", type: "nominal" },
@@ -94,84 +94,36 @@ var map = {
 };
 
 
-var map2 = {
+var map4=
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 300,
   "data": {
-    "url": "https://maps-amherstma.opendata.arcgis.com/datasets/d887750c3b4a40c09e753642988e7aee_0.geojson",
+    "url": "data/mapgeojson.topojson",
     "format": {
-      "property": "features"
+      "type": "topojson",
+      "feature": "mapgeojson"
     }
+  },
+  "transform": [{
+    "lookup": "id",
+    "from": {
+      "data": {
+        "url": "data/bevolkerung-2019.csv"
+      },
+      "key": "Gebied_code",
+      "fields": ["anzahl"]
+    }
+  }],
+  "projection": {
+    "type": "albersUsa"
   },
   "mark": "geoshape",
   "encoding": {
     "color": {
-      "field": "properties.TotalAssessment",
+      "field": "anzahl",
       "type": "quantitative"
     }
   }
-};
- var map3 =
- {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "url": "data/income.json"
-  },
-  "transform": [
-    {
-      "lookup": "id",
-      "from": {
-        "data": {
-          "url": "data/us-10m.json",
-          "format": {
-            "type": "topojson",
-            "feature": "states"
-          }
-        },
-        "key": "id"
-      },
-      "as": "geo"
-    }
-  ],
-  "projection": {"type": "albersUsa"},
-  "mark": "geoshape",
-  "encoding": {
-    "shape": {"field": "geo", "type": "geojson"},
-    "color": {"field": "pct", "type": "quantitative"},
-    "row": {"field": "group"}
-  }
-};
-var map4=
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "url": "https://opendata.arcgis.com/datasets/686603e943f948acaa13fb5d2b0f1275_3.geojson",
-    "format": {"property": "features"}
-  },
-  "transform": [
-    {
-      "filter": {
-        "field": "properties.lad16nm",
-        "oneOf": [
-          "Bolton",
-          "Bury",
-          "Manchester",
-          "Oldham",
-          "Rochdale",
-          "Salford",
-          "Stockport",
-          "Tameside",
-          "Trafford",
-          "Wigan"
-        ]
-      }
-    }
-  ],
-  "projection": {"type": "mercator"},
-  "mark": "geoshape"
 }
