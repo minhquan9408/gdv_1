@@ -49,57 +49,27 @@ var bar = {
 
 
 
-var map3=
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "url": "data/mapgeojson.json",
-    "format": {
-      "property":"properties"
-    }
-  },
-  "transform": [
-  //  {"filter": "isValid(datum.Gebied_code)"}
-    {
-    "lookup": "id",
-    "from": {
-      "data": {
-        "url": "data/bevolkerung-2019.csv"
-      },
-      "key": "Gebied_code",
-      "fields": ["anzahl"]
-    }
-  }],
-  "projection": {
-    "type": "albersUsa"
-  },
-  "mark": "geoshape",
-  "encoding": {
-    "color": {
-      "field": "anzahl",
-      "type": "quantitative"
-    }
-  }
-};
+
 var areastacked =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "width": 300, "height": 200,
-    "data": {"url": "data/unemployment-across-industries.json"},
+    "data": {"url": "data/migration_e_west.json"},
   "mark": "area",
     "encoding": {
   "x": {
-    "timeUnit": "yearmonth", "field": "date",
-        "axis": {"format": "%Y"}
+    "field": "Jahr",
+    "type": "temporal",
+     "axis": {"format": "%Y"}
   },
   "y": {
-    "aggregate": "sum", "field": "count"
+    "aggregate": "sum",
+    "field": "Anzahl",
+    "type":"quantitative"
   },
   "color": {
-    "field": "series",
-        "scale": {"scheme": "category20b"}
+    "field": "Gruppe",
+        "scale": {"scheme": "paired"}
   }
 }
 }
