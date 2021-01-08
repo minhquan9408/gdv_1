@@ -24,7 +24,7 @@ var beispiel1 = {
 var beispiel2 = {
   $schema: "https://vega.github.io/schema/vega-lite/v4.json",
 
-  data: { url : "data/kreis.json"},
+  data: { url : "data/kreis.csv"},
   mark: "arc",
   encoding: {
     color: { field: "stadtbezirke", type: "nominal" },
@@ -37,7 +37,7 @@ view: {stroke: null}
 var bar = {
   $schema: "https://vega.github.io/schema/vega-lite/v4.json",
 
-  data: { url : "data/kreis.json"},
+  data: { url : "data/kreis.csv"},
   mark: "bar",
   encoding: {
     x: { field: "stadtbezirke", type: "nominal" },
@@ -47,66 +47,22 @@ var bar = {
 };
 
 
-var map = {
-  $schema: "https://vega.github.io/schema/vega-lite/v4.json",
-  description: "the population per state, engineers per state, and hurricanes per state",
-  repeat: {"row": ["population", "engineers", "hurricanes"]},
-  resolve: {
-    scale: {
-      color: "independent"
-    }
-  },
-  spec: {
-    width: 500,
-    height: 300,
-    data: {
-      url: "data/population_engineers_hurricanes.csv"
-    },
-    transform: [
-      {
-        lookup: "id",
-        from: {
-          data: {
-          url: "data/us-10m.json",
-            format: {
-              type: "topojson",
-              feature: "states"
-            }
-          },
-          key: "id"
-        },
-        as: "geo"
-      }
-    ],
-    projection: {type: "albersUSA"},
-    mark: "geoshape",
-    encoding: {
-      shape: {
-        field: "geo",
-        type: "geojson"
-      },
-      color: {
-        field: {"repeat": "row"},
-        type: "quantitative"
-      }
-    }
-  }
-};
 
 
-var map4=
+var map3=
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 300,
   "data": {
-    "url": "data/mapgeojson.topojson",
+    "url": "data/mapgeojson.json",
     "format": {
-      "type": "topojson",
-      "feature": "mapgeojson"
+      "property":"properties"
     }
   },
-  "transform": [{
+  "transform": [
+  //  {"filter": "isValid(datum.Gebied_code)"}
+    {
     "lookup": "id",
     "from": {
       "data": {
@@ -126,4 +82,4 @@ var map4=
       "type": "quantitative"
     }
   }
-}
+};
