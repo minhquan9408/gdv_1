@@ -47,60 +47,119 @@ var bar = {
 };
 
 
-
-
-var map3=
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "url": "data/mapgeojson.json",
-    "format": {
-      "property":"properties"
-    }
-  },
-  "transform": [
-  //  {"filter": "isValid(datum.Gebied_code)"}
+//Flächendiagramm für E West, Bos en Lommer
+var areastacked1 =
     {
-    "lookup": "id",
-    "from": {
-      "data": {
-        "url": "data/bevolkerung-2019.csv"
+      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+      description: "Flächendiagramm für E West, Bos en Lommer",
+      "width": 600, "height": 300,
+      "data": {"url": "data/migration.json",
+        "format": {
+          "type": "json",
+          "parse": {
+            "Jahr": "number"
+          }
+        }
       },
-      "key": "Gebied_code",
-      "fields": ["anzahl"]
-    }
-  }],
-  "projection": {
-    "type": "albersUsa"
-  },
-  "mark": "geoshape",
-  "encoding": {
-    "color": {
-      "field": "anzahl",
-      "type": "quantitative"
-    }
-  }
-};
-var areastacked =
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "width": 300, "height": 200,
-    "data": {"url": "data/unemployment-across-industries.json"},
-  "mark": "area",
-    "encoding": {
-  "x": {
-    "timeUnit": "yearmonth", "field": "date",
-        "axis": {"format": "%Y"}
-  },
-  "y": {
-    "aggregate": "sum", "field": "count"
-  },
-  "color": {
-    "field": "series",
-        "scale": {"scheme": "category20b"}
-  }
-}
-}
+      "transform": [
+        {"filter": "datum.Stadtteil ==='DX04 Bos en Lommer'"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
 
+      ],
+      "mark": {"type":"area","line":true, "point" : true  },
+      "encoding": {
+        "x": {
+          "field": "Jahr",
+          "type": "ordinal",
+          "timeUnit" :"year",
+          //"axis": {"format": "%Y"}
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Anzahl",
+          "type":"quantitative"
+        },
+        "color": {
+          "field": "Gruppe",
+          "scale": {"scheme": "paired"}
+        }
+      }
+    }
+
+//Flächendiagramm für M Oost, Indische Buurt, Oostelijk Havengebied
+var areastacked2 =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        description: "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 300,
+        "data": {"url": "data/migration.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }
+            }
+        },
+        "transform": [
+            {"filter": "datum.Stadtteil ==='DX14 Indische Buurt, Oostelijk Havengebied'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+
+        ],
+        "mark": {"type":"area","line":true, "point" : true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year",
+                //"axis": {"format": "%Y"}
+            },
+            "y": {
+                "aggregate": "sum",
+                "field": "Anzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Gruppe",
+                "scale": {"scheme": "paired"}
+            }
+        }
+    }
+
+//Flächendiagramm für K Zuid, DX11 Buitenveldert, Zuidas
+var areastacked3 =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        description: "Flächendiagramm für K Zuid, Buitenveldert, Zuidas",
+        "width": 600, "height": 300,
+        "data": {"url": "data/migration.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }
+            }
+        },
+        "transform": [
+            {"filter": "datum.Stadtteil ==='DX11 Buitenveldert, Zuidas'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+
+        ],
+        "mark": {"type":"area","line":true, "point" : true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year",
+                //"axis": {"format": "%Y"}
+            },
+            "y": {
+                "aggregate": "sum",
+                "field": "Anzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Gruppe",
+                "scale": {"scheme": "paired"}
+            }
+        }
+    }
