@@ -47,30 +47,119 @@ var bar = {
 };
 
 
+//Flächendiagramm für E West, Bos en Lommer
+var areastacked1 =
+    {
+      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+      description: "Flächendiagramm für E West, Bos en Lommer",
+      "width": 600, "height": 300,
+      "data": {"url": "data/migration.json",
+        "format": {
+          "type": "json",
+          "parse": {
+            "Jahr": "number"
+          }
+        }
+      },
+      "transform": [
+        {"filter": "datum.Stadtteil ==='DX04 Bos en Lommer'"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
 
+      ],
+      "mark": {"type":"area","line":true, "point" : true  },
+      "encoding": {
+        "x": {
+          "field": "Jahr",
+          "type": "ordinal",
+          "timeUnit" :"year",
+          //"axis": {"format": "%Y"}
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Anzahl",
+          "type":"quantitative"
+        },
+        "color": {
+          "field": "Gruppe",
+          "scale": {"scheme": "paired"}
+        }
+      }
+    }
 
+//Flächendiagramm für M Oost, Indische Buurt, Oostelijk Havengebied
+var areastacked2 =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        description: "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 300,
+        "data": {"url": "data/migration.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }
+            }
+        },
+        "transform": [
+            {"filter": "datum.Stadtteil ==='DX14 Indische Buurt, Oostelijk Havengebied'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
 
-var areastacked =
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "width": 300, "height": 200,
-    "data": {"url": "data/migration_e_west.json"},
-  "mark": "area",
-    "encoding": {
-  "x": {
-    "field": "Jahr",
-    "type": "temporal",
-     "axis": {"format": "%Y"}
-  },
-  "y": {
-    "aggregate": "sum",
-    "field": "Anzahl",
-    "type":"quantitative"
-  },
-  "color": {
-    "field": "Gruppe",
-        "scale": {"scheme": "paired"}
-  }
-}
-}
+        ],
+        "mark": {"type":"area","line":true, "point" : true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year",
+                //"axis": {"format": "%Y"}
+            },
+            "y": {
+                "aggregate": "sum",
+                "field": "Anzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Gruppe",
+                "scale": {"scheme": "paired"}
+            }
+        }
+    }
 
+//Flächendiagramm für K Zuid, DX11 Buitenveldert, Zuidas
+var areastacked3 =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        description: "Flächendiagramm für K Zuid, Buitenveldert, Zuidas",
+        "width": 600, "height": 300,
+        "data": {"url": "data/migration.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }
+            }
+        },
+        "transform": [
+            {"filter": "datum.Stadtteil ==='DX11 Buitenveldert, Zuidas'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+
+        ],
+        "mark": {"type":"area","line":true, "point" : true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year",
+                //"axis": {"format": "%Y"}
+            },
+            "y": {
+                "aggregate": "sum",
+                "field": "Anzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Gruppe",
+                "scale": {"scheme": "paired"}
+            }
+        }
+    }
