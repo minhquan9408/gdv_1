@@ -1,0 +1,42 @@
+[
+  {
+    "Jahr": 2019,
+    "Gebiet-Schlüssel": "DX09",
+    "Variabel": "BEVVEST",
+    "Anzahl": 5318,
+    "Stadtteil": "DX09 Slotervaart",
+    "Stadtbezirke": "F Nieuw-West",
+    "Dimension": "Bevölkerung: Ankünfte von außerhalb der Stadt",
+    "Gruppe": "Einzug"
+  },
+  {
+    "Jahr": 2019,
+    "Gebiet-Schlüssel": "DX09",
+    "Variabel": "BEVVERT",
+    "Anzahl": 4639,
+    "Stadtteil": "DX09 Slotervaart",
+    "Stadtbezirke": "F Nieuw-West",
+    "Dimension": "Bevölkerung: Abfahrten aus der Stadt",
+    "Gruppe": "Auszug"
+  },
+  {
+    "Jahr": 2019,
+    "Gebiet-Schlüssel": "DX09",
+    "Variabel": "BEVVESTINT",
+    "Anzahl": 4999,
+    "Stadtteil": "DX09 Slotervaart",
+    "Stadtbezirke": "F Nieuw-West",
+    "Dimension": "Bevölkerung: Ankünfte aus Amsterdam (anderes Gebiet)",
+    "Gruppe": "Einzug"
+  },
+  {
+    "Jahr": 2019,
+    "Gebiet-Schlüssel": "DX09",
+    "Variabel": "BEVVERTINT",
+    "Anzahl": 4703,
+    "Stadtteil": "DX09 Slotervaart",
+    "Stadtbezirke": "F Nieuw-West",
+    "Dimension": "Bevölkerung: Abfahrten nach Amsterdam (anderes Gebiet)",
+    "Gruppe": "Auszug"
+  }
+]
