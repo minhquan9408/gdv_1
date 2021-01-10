@@ -163,3 +163,71 @@ var areastacked3 =
             }
         }
     }
+
+
+var kreis =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple pie chart with labels.",
+        "data": { url : "data/bewegung1.json"
+        },
+        "encoding": {
+            "theta": {"field": "Anzahl", "aggregate":"sum", "type": "quantitative", "stack": true},
+            "color": {"field": "Gruppe", "type": "nominal", "legend": null}
+        },
+        "layer": [{
+            "mark": {"type": "arc", "outerRadius": 80}
+        }, {
+            "mark": {"type": "text", "radius": 90},
+            "encoding": {
+                "text": {"field": "Gruppe", "type": "nominal"}
+            }
+        }],
+        "view": {"stroke": null}
+    }
+    /*
+ var kreis1 =
+     {
+         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+         "description": "A simple pie chart with labels.",
+         "data": { url : "data/bewegung.json"
+         },
+         transform :[
+             {filter: datum.Jahr == 2019},
+             {filter: datum.Stadtteil ==="DX09 Slotervaart" }
+         ],
+         "encoding": {
+             "theta": {"field": "Anzahl", "aggregate":"sum", "type": "quantitative", "stack": true},
+             "color": {"field": "Gruppe", "type": "nominal"}
+         },
+         "layer": [{
+             "mark": {"type": "arc", "outerRadius": 80}
+         }, {
+             "mark": {"type": "text", "radius": 90},
+             "encoding": {
+                 "text": {"field": "Gruppe", "type": "nominal"}
+             }
+         }],
+         "view": {"stroke": null}
+     }
+     */
+
+var map = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 500,
+    "height": 300,
+    "data": {
+    "url": "data/mapgeojson.json",
+        "format": {"property": "features"}
+},
+
+    "projection": {"type": "albers"},
+    "mark": {
+        "type": "geoshape",
+        "fill": "#eee",
+        "stroke": "#757575",
+        "strokeWidth": 0.5
+    }
+}
+
+
