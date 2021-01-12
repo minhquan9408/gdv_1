@@ -164,13 +164,14 @@ var areastacked3 =
         }
     }
 
-
+//Kreis Diagramm Stolervaart 2019
 var kreis =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "A simple pie chart with labels.",
         "data": { url : "data/bewegung1.json"
         },
+
         "encoding": {
             "theta": {"field": "Anzahl", "aggregate":"sum", "type": "quantitative", "stack": true},
             "color": {"field": "Gruppe", "type": "nominal", "legend": null}
@@ -178,9 +179,9 @@ var kreis =
         "layer": [{
             "mark": {"type": "arc", "outerRadius": 80}
         }, {
-            "mark": {"type": "text", "radius": 90},
+            "mark": {"type": "text", "radius": 93},
             "encoding": {
-                "text": {"field": "Gruppe", "type": "nominal"}
+                "text": {"field": "Anzahl",aggregate:"sum", "type": "nominal"}
             }
         }],
         "view": {"stroke": null}
@@ -221,7 +222,7 @@ var map = {
         "format": {"property": "features"}
 },
 
-    "projection": {"type": "albers"},
+    "projection": {"type": "mercator"},
     "mark": {
         "type": "geoshape",
         "fill": "#eee",
@@ -229,5 +230,28 @@ var map = {
         "strokeWidth": 0.5
     }
 }
+var map3 = {
+    $schema: "https://vega.github.io/schema/vega-lite/v4.json",
+    width: 700,
+    height: 500,
+    config: { view: { stroke: "transparent" } },
+    data: {
+        url: "data/map.topojson",
+        format: { type: "topojson", feature: "states" }
+    },
+    mark: { type: "geoshape", stroke: "white", strokeWidth: 2 },
+    encoding: { color: { value: "#eee" } }
+};
 
-
+var map4 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 700,
+    "height": 500,
+    "config": {"view": {"stroke": "transparent"}},
+    "data": {
+    "url": "https://raw.githubusercontent.com/funkeinteraktiv/Berlin-Geodaten/master/berlin_bezirke.topojson",
+        "format": {"type": "topojson", "feature": "states"}
+},
+    "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
+    "encoding": {"color": {"value": "#eee"}}
+}
