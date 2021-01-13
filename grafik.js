@@ -213,44 +213,15 @@ var kreis =
      }
      */
 
-var map = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "width": 500,
-    "height": 300,
-    "data": {
-    "url": "data/mapgeojson.json",
-        "format": {"property": "features"}
-},
-
-    "projection": {"type": "mercator"},
-    "mark": {
-        "type": "geoshape",
-        "fill": "#eee",
-        "stroke": "#757575",
-        "strokeWidth": 0.5
-    }
-}
-var map3 = {
-    $schema: "https://vega.github.io/schema/vega-lite/v4.json",
-    width: 700,
-    height: 500,
-    config: { view: { stroke: "transparent" } },
-    data: {
-        url: "data/map.topojson",
-        format: { type: "topojson", feature: "states" }
-    },
-    mark: { type: "geoshape", stroke: "white", strokeWidth: 2 },
-    encoding: { color: { value: "#eee" } }
-};
-
-var map4 = {
+var map4 =
+    {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "width": 700,
     "height": 500,
     "config": {"view": {"stroke": "transparent"}},
     "data": {
-    "url": "https://raw.githubusercontent.com/funkeinteraktiv/Berlin-Geodaten/master/berlin_bezirke.topojson",
-        "format": {"type": "topojson", "feature": "states"}
+    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
+        "format": {"type": "topojson", "feature": "features"}
 },
     "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
     "encoding": {"color": {"value": "#eee"}}
