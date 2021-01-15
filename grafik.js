@@ -14,7 +14,7 @@ var areastacked1 =
         }
       },
       "transform": [
-          {"filter" :"datum.Jahr>2005"},
+
         {"filter": "datum.Stadtteil ==='DX04 Bos en Lommer'"},
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
 
