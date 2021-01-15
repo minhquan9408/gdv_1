@@ -1,6 +1,6 @@
 
-//Flächendiagramm für E West, Bos en Lommer
-var areastacked1 =
+//Flächendiagramm für Migrationshintergrund Buitenveldert, Zuidas
+var migration1 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Buitenveldert, Zuidas",
@@ -44,8 +44,8 @@ var areastacked1 =
         }
     }
 
-//Flächendiagramm für M Oost, Indische Buurt, Oostelijk Havengebied
-var areastacked2 =
+//Flächendiagramm für Migrationshintergrund  IJburg, Zeeburgereiland
+var migration2 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für IJburg, Zeeburgereiland",
@@ -89,8 +89,8 @@ var areastacked2 =
         }
     }
 
-//Flächendiagramm für K Zuid, DX11 Buitenveldert, Zuidas
-var areastacked3 =
+//Flächendiagramm für Migrationshintergrund  Bijlmer-Centrum, Amstel III
+var migration3 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Bijlmer-Centrum, Amstel III",
@@ -134,6 +134,122 @@ var areastacked3 =
         }
     }
 
+//Flächendiagramm für Bewegung  Bijlmer-Centrum, Amstel III
+var bewegung1=
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"filter":"datum.Dimension !== 'Mit'"},
+            {
+                "filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+        ],
+        "mark": {"type":"area","line":true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+                "field": "Kennzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Dimension",
+                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]}
+
+            }
+        }
+    }
+
+//Flächendiagramm für Bewegung  Bijlmer-Centrum, Amstel III
+var bewegung2=
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"filter":"datum.Dimension !== 'Mit'"},
+            {
+                "filter": "datum.Stadtteil ==='IJburg, Zeeburgereiland'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+        ],
+        "mark": {"type":"area","line":true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+                "field": "Kennzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Dimension",
+                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]}
+
+            }
+        }
+    }
+
+//Flächendiagramm für Bewegung  Bijlmer-Centrum, Amstel III
+var bewegung3=
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"filter":"datum.Dimension !== 'Mit'"},
+            {
+                "filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+        ],
+        "mark": {"type":"area","line":true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+                "field": "Kennzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Dimension",
+                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]}
+
+            }
+        }
+    }
 //Kreis Diagramm Stolervaart 2019
 var kreis =
     {
