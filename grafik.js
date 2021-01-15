@@ -140,7 +140,7 @@ var bewegung1=
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
         "width": 600, "height": 200,
-        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
                 "parse": {
@@ -179,7 +179,7 @@ var bewegung2=
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
         "width": 600, "height": 200,
-        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
                 "parse": {
@@ -218,7 +218,7 @@ var bewegung3=
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
         "width": 600, "height": 200,
-        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
                 "parse": {
