@@ -1320,144 +1320,6 @@
     "Kennzahl": 0.472013569
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2010,
-    "Kennzahl": 588
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2010,
-    "Kennzahl": 181
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2010,
-    "Kennzahl": -19
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2010,
-    "Kennzahl": 1816
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2010,
-    "Kennzahl": 156
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2010,
-    "Kennzahl": -12
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2010,
-    "Kennzahl": -208
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2010,
-    "Kennzahl": 866
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2010,
-    "Kennzahl": 213
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2010,
-    "Kennzahl": 104
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2010,
-    "Kennzahl": 214
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2010,
-    "Kennzahl": -14
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2010,
-    "Kennzahl": 657
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2010,
-    "Kennzahl": 244
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2010,
-    "Kennzahl": -261
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2010,
-    "Kennzahl": 623
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2010,
-    "Kennzahl": -25
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2010,
-    "Kennzahl": 81
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2010,
-    "Kennzahl": -50
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2010,
-    "Kennzahl": 220
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2010,
-    "Kennzahl": 780
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2010,
-    "Kennzahl": 386
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2010,
-    "Kennzahl": 586
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2010,
@@ -2008,144 +1870,6 @@
     "Stadtteil": "Westerpark",
     "Jahr": 2010,
     "Kennzahl": 354
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2011,
-    "Kennzahl": 1249
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2011,
-    "Kennzahl": -108
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2011,
-    "Kennzahl": 327
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2011,
-    "Kennzahl": 411
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2011,
-    "Kennzahl": 762
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2011,
-    "Kennzahl": -3
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2011,
-    "Kennzahl": 277
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2011,
-    "Kennzahl": 68
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2011,
-    "Kennzahl": -290
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2011,
-    "Kennzahl": 52
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2011,
-    "Kennzahl": -247
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2011,
-    "Kennzahl": -68
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2011,
-    "Kennzahl": 376
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2011,
-    "Kennzahl": 417
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2011,
-    "Kennzahl": 714
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2011,
-    "Kennzahl": 492
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2011,
-    "Kennzahl": -85
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2011,
-    "Kennzahl": 53
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2011,
-    "Kennzahl": 781
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2011,
-    "Kennzahl": -78
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2011,
-    "Kennzahl": 665
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2011,
-    "Kennzahl": 1559
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2011,
-    "Kennzahl": -474
   },
   {
     "Dimension": "Einszug (innerhalb Amsterdam)",
@@ -2700,144 +2424,6 @@
     "Kennzahl": 198
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2012,
-    "Kennzahl": ""
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2012,
@@ -3388,144 +2974,6 @@
     "Stadtteil": "Westerpark",
     "Jahr": 2012,
     "Kennzahl": -2492
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2013,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2013,
-    "Kennzahl": ""
   },
   {
     "Dimension": "Einszug (innerhalb Amsterdam)",
@@ -4080,144 +3528,6 @@
     "Kennzahl": -2396
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2014,
-    "Kennzahl": ""
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2014,
@@ -4768,144 +4078,6 @@
     "Stadtteil": "Westerpark",
     "Jahr": 2014,
     "Kennzahl": -2546
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2015,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2015,
-    "Kennzahl": ""
   },
   {
     "Dimension": "Einszug (innerhalb Amsterdam)",
@@ -5460,144 +4632,6 @@
     "Kennzahl": -2652
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2016,
-    "Kennzahl": ""
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2016,
@@ -6148,144 +5182,6 @@
     "Stadtteil": "Westerpark",
     "Jahr": 2016,
     "Kennzahl": -2446
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2017,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2017,
-    "Kennzahl": ""
   },
   {
     "Dimension": "Einszug (innerhalb Amsterdam)",
@@ -6840,144 +5736,6 @@
     "Kennzahl": -2536
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2018,
-    "Kennzahl": ""
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2018,
@@ -7530,144 +6288,6 @@
     "Kennzahl": -2550
   },
   {
-    "Dimension": "Saldo",
-    "Stadtteil": "Buitenveldert, Zuidas",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bos en Lommer",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "IJburg, Zeeburgereiland",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Centrum, Amstel III",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Bijlmer-Oost",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-Oost",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Centrum-West",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "De Pijp, Rivierenbuurt",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Gaasperdam, Driemond",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-Oost",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Noord-West",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Osdorp",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud West, De Baarsjes",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Noord",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Oost",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Oud-Zuid",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Slotervaart",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Watergraafsmeer",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
-    "Dimension": "Saldo",
-    "Stadtteil": "Westerpark",
-    "Jahr": 2019,
-    "Kennzahl": ""
-  },
-  {
     "Dimension": "Einszug (innerhalb Amsterdam)",
     "Stadtteil": "Buitenveldert, Zuidas",
     "Jahr": 2019,
@@ -8218,5 +6838,1385 @@
     "Stadtteil": "Westerpark",
     "Jahr": 2019,
     "Kennzahl": -2600
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2010,
+    "Kennzahl": 588
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2011,
+    "Kennzahl": 894
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2012,
+    "Kennzahl": 213
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2013,
+    "Kennzahl": 475
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2014,
+    "Kennzahl": 1041
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2015,
+    "Kennzahl": 1249
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2016,
+    "Kennzahl": 1203
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2017,
+    "Kennzahl": 1479
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2018,
+    "Kennzahl": 541
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Buitenveldert, Zuidas",
+    "Jahr": 2019,
+    "Kennzahl": 512
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2010,
+    "Kennzahl": 181
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2011,
+    "Kennzahl": -498
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2012,
+    "Kennzahl": -450
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2013,
+    "Kennzahl": 168
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2014,
+    "Kennzahl": -471
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2015,
+    "Kennzahl": -108
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2016,
+    "Kennzahl": -181
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2017,
+    "Kennzahl": -489
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2018,
+    "Kennzahl": -228
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Indische Buurt, Oostelijk Havengebied",
+    "Jahr": 2019,
+    "Kennzahl": -451
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2010,
+    "Kennzahl": -19
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2011,
+    "Kennzahl": 154
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2012,
+    "Kennzahl": 793
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2013,
+    "Kennzahl": 539
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2014,
+    "Kennzahl": 41
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2015,
+    "Kennzahl": 327
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2016,
+    "Kennzahl": -551
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2017,
+    "Kennzahl": -258
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2018,
+    "Kennzahl": 141
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bos en Lommer",
+    "Jahr": 2019,
+    "Kennzahl": 326
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2010,
+    "Kennzahl": 1816
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2011,
+    "Kennzahl": 1468
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2012,
+    "Kennzahl": 658
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2013,
+    "Kennzahl": 261
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2014,
+    "Kennzahl": 94
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2015,
+    "Kennzahl": 411
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2016,
+    "Kennzahl": 1410
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2017,
+    "Kennzahl": 1421
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2018,
+    "Kennzahl": 998
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "IJburg, Zeeburgereiland",
+    "Jahr": 2019,
+    "Kennzahl": 1051
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2010,
+    "Kennzahl": 156
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2011,
+    "Kennzahl": 514
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2012,
+    "Kennzahl": 809
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2013,
+    "Kennzahl": -7
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2014,
+    "Kennzahl": 37
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2015,
+    "Kennzahl": 762
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2016,
+    "Kennzahl": 456
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2017,
+    "Kennzahl": -246
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2018,
+    "Kennzahl": -231
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Centrum, Amstel III",
+    "Jahr": 2019,
+    "Kennzahl": 708
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2010,
+    "Kennzahl": -12
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2011,
+    "Kennzahl": 0
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2012,
+    "Kennzahl": 49
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2013,
+    "Kennzahl": -59
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2014,
+    "Kennzahl": -45
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2015,
+    "Kennzahl": -3
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2016,
+    "Kennzahl": -29
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2017,
+    "Kennzahl": -7
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2018,
+    "Kennzahl": -21
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "",
+    "Jahr": 2019,
+    "Kennzahl": -117
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2010,
+    "Kennzahl": -208
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2011,
+    "Kennzahl": -46
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2012,
+    "Kennzahl": 161
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2013,
+    "Kennzahl": 141
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2014,
+    "Kennzahl": 42
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2015,
+    "Kennzahl": 277
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2016,
+    "Kennzahl": 1030
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2017,
+    "Kennzahl": 150
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2018,
+    "Kennzahl": 440
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Bijlmer-Oost",
+    "Jahr": 2019,
+    "Kennzahl": 159
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2010,
+    "Kennzahl": 866
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2011,
+    "Kennzahl": 145
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2012,
+    "Kennzahl": 722
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2013,
+    "Kennzahl": -153
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2014,
+    "Kennzahl": 21
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2015,
+    "Kennzahl": 68
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2016,
+    "Kennzahl": 91
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2017,
+    "Kennzahl": 156
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2018,
+    "Kennzahl": -229
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-Oost",
+    "Jahr": 2019,
+    "Kennzahl": 216
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2010,
+    "Kennzahl": 213
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2011,
+    "Kennzahl": -47
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2012,
+    "Kennzahl": 43
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2013,
+    "Kennzahl": 286
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2014,
+    "Kennzahl": 23
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2015,
+    "Kennzahl": -290
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2016,
+    "Kennzahl": -420
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2017,
+    "Kennzahl": -17
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2018,
+    "Kennzahl": 10
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Centrum-West",
+    "Jahr": 2019,
+    "Kennzahl": 118
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2010,
+    "Kennzahl": 104
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2011,
+    "Kennzahl": -53
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2012,
+    "Kennzahl": -68
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2013,
+    "Kennzahl": -143
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2014,
+    "Kennzahl": 16
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2015,
+    "Kennzahl": 52
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2016,
+    "Kennzahl": -123
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2017,
+    "Kennzahl": -52
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2018,
+    "Kennzahl": -165
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Aker, Sloten, Nieuw-Sloten",
+    "Jahr": 2019,
+    "Kennzahl": -140
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2010,
+    "Kennzahl": 214
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2011,
+    "Kennzahl": 46
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2012,
+    "Kennzahl": 427
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2013,
+    "Kennzahl": 221
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2014,
+    "Kennzahl": -118
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2015,
+    "Kennzahl": -247
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2016,
+    "Kennzahl": -490
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2017,
+    "Kennzahl": -475
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2018,
+    "Kennzahl": -625
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "De Pijp, Rivierenbuurt",
+    "Jahr": 2019,
+    "Kennzahl": -504
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2010,
+    "Kennzahl": -14
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2011,
+    "Kennzahl": -132
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2012,
+    "Kennzahl": -507
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2013,
+    "Kennzahl": -57
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2014,
+    "Kennzahl": -121
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2015,
+    "Kennzahl": -68
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2016,
+    "Kennzahl": -200
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2017,
+    "Kennzahl": -310
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2018,
+    "Kennzahl": -76
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Gaasperdam, Driemond",
+    "Jahr": 2019,
+    "Kennzahl": -24
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2010,
+    "Kennzahl": 657
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2011,
+    "Kennzahl": 416
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2012,
+    "Kennzahl": -55
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2013,
+    "Kennzahl": -82
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2014,
+    "Kennzahl": 690
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2015,
+    "Kennzahl": 376
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2016,
+    "Kennzahl": -62
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2017,
+    "Kennzahl": 375
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2018,
+    "Kennzahl": 556
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Geuzenveld, Slotermeer, Sloterdijken",
+    "Jahr": 2019,
+    "Kennzahl": 37
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2010,
+    "Kennzahl": 244
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2011,
+    "Kennzahl": 326
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2012,
+    "Kennzahl": 195
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2013,
+    "Kennzahl": 528
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2014,
+    "Kennzahl": 464
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2015,
+    "Kennzahl": 417
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2016,
+    "Kennzahl": 103
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2017,
+    "Kennzahl": 102
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2018,
+    "Kennzahl": 57
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-Oost",
+    "Jahr": 2019,
+    "Kennzahl": 625
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2010,
+    "Kennzahl": -261
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2011,
+    "Kennzahl": 110
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2012,
+    "Kennzahl": 744
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2013,
+    "Kennzahl": 460
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2014,
+    "Kennzahl": 343
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2015,
+    "Kennzahl": 714
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2016,
+    "Kennzahl": 449
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2017,
+    "Kennzahl": 23
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2018,
+    "Kennzahl": 325
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Noord-West",
+    "Jahr": 2019,
+    "Kennzahl": 611
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2010,
+    "Kennzahl": 623
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2011,
+    "Kennzahl": 540
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2012,
+    "Kennzahl": 238
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2013,
+    "Kennzahl": 420
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2014,
+    "Kennzahl": 427
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2015,
+    "Kennzahl": 492
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2016,
+    "Kennzahl": 158
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2017,
+    "Kennzahl": 107
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2018,
+    "Kennzahl": -194
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Osdorp",
+    "Jahr": 2019,
+    "Kennzahl": 316
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2010,
+    "Kennzahl": -25
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2011,
+    "Kennzahl": -1
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2012,
+    "Kennzahl": 1555
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2013,
+    "Kennzahl": 511
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2014,
+    "Kennzahl": -231
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2015,
+    "Kennzahl": -85
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2016,
+    "Kennzahl": -514
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2017,
+    "Kennzahl": -525
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2018,
+    "Kennzahl": -560
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud West, De Baarsjes",
+    "Jahr": 2019,
+    "Kennzahl": -255
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2010,
+    "Kennzahl": 81
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2011,
+    "Kennzahl": -47
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2012,
+    "Kennzahl": -56
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2013,
+    "Kennzahl": 356
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2014,
+    "Kennzahl": 221
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2015,
+    "Kennzahl": 53
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2016,
+    "Kennzahl": 925
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2017,
+    "Kennzahl": 909
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2018,
+    "Kennzahl": 178
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Noord",
+    "Jahr": 2019,
+    "Kennzahl": 340
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2010,
+    "Kennzahl": -50
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2011,
+    "Kennzahl": -339
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2012,
+    "Kennzahl": -556
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2013,
+    "Kennzahl": 231
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2014,
+    "Kennzahl": 721
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2015,
+    "Kennzahl": 781
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2016,
+    "Kennzahl": 395
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2017,
+    "Kennzahl": 64
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2018,
+    "Kennzahl": 43
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Oost",
+    "Jahr": 2019,
+    "Kennzahl": -187
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2010,
+    "Kennzahl": 220
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2011,
+    "Kennzahl": -119
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2012,
+    "Kennzahl": -1136
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2013,
+    "Kennzahl": -95
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2014,
+    "Kennzahl": 19
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2015,
+    "Kennzahl": -78
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2016,
+    "Kennzahl": -446
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2017,
+    "Kennzahl": -768
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2018,
+    "Kennzahl": -235
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Oud-Zuid",
+    "Jahr": 2019,
+    "Kennzahl": -387
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2010,
+    "Kennzahl": 780
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2011,
+    "Kennzahl": 64
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2012,
+    "Kennzahl": 812
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2013,
+    "Kennzahl": 909
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2014,
+    "Kennzahl": 691
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2015,
+    "Kennzahl": 665
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2016,
+    "Kennzahl": 1274
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2017,
+    "Kennzahl": 2635
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2018,
+    "Kennzahl": 1057
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Slotervaart",
+    "Jahr": 2019,
+    "Kennzahl": 975
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2010,
+    "Kennzahl": 386
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2011,
+    "Kennzahl": -3
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2012,
+    "Kennzahl": -186
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2013,
+    "Kennzahl": 1373
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2014,
+    "Kennzahl": 994
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2015,
+    "Kennzahl": 1559
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2016,
+    "Kennzahl": 667
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2017,
+    "Kennzahl": -378
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2018,
+    "Kennzahl": 954
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Watergraafsmeer",
+    "Jahr": 2019,
+    "Kennzahl": 352
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2010,
+    "Kennzahl": 586
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2011,
+    "Kennzahl": 154
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2012,
+    "Kennzahl": -229
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2013,
+    "Kennzahl": 104
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2014,
+    "Kennzahl": 354
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2015,
+    "Kennzahl": -474
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2016,
+    "Kennzahl": -370
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2017,
+    "Kennzahl": -172
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2018,
+    "Kennzahl": 861
+  },
+  {
+    "Dimension": "Saldo",
+    "Stadtteil": "Westerpark",
+    "Jahr": 2019,
+    "Kennzahl": 198
   }
 ]

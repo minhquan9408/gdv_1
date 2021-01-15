@@ -2,63 +2,23 @@
 //Flächendiagramm für E West, Bos en Lommer
 var areastacked1 =
     {
-      "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-      "description": "Flächendiagramm für E West, Bos en Lommer",
-      "width": 600, "height": 200,
-      "data": {"url": "data/migration.json",
-        "format": {
-          "type": "json",
-          "parse": {
-            "Jahr": "number"
-          }
-        }
-      },
-      "transform": [
-
-        {"filter": "datum.Stadtteil ==='DX04 Bos en Lommer'"},
-        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
-
-      ],
-      "mark": {"type":"area","line":true, "point" : true  },
-      "encoding": {
-        "x": {
-          "field": "Jahr",
-          "type": "ordinal",
-          "timeUnit" :"year",
-          //"axis": {"format": "%Y"}
-        },
-        "y": {
-          "aggregate": "sum",
-          "field": "Anzahl",
-          "type":"quantitative"
-        },
-        "color": {
-          "field": "Gruppe",
-          "scale": {"scheme": "paired"},
-            "legend":{
-                "disable":"true"
-            }
-        }
-      }
-    }
-
-//Flächendiagramm für M Oost, Indische Buurt, Oostelijk Havengebied
-var areastacked2 =
-    {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        description: "Flächendiagramm für E West, Bos en Lommer",
+        "description": "Flächendiagramm für Buitenveldert, Zuidas",
         "width": 600, "height": 200,
-        "data": {"url": "data/migration.json",
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
                 "parse": {
                     "Jahr": "number"
+
                 }
             }
         },
         "transform": [
-            {"filter": "datum.Stadtteil ==='DX14 Indische Buurt, Oostelijk Havengebied'"},
-            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+            {"filter":"datum.Dimension ==='Mit Migrationshintergrund'"},
+            {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"},
+            {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
 
         ],
         "mark": {"type":"area","line":true, "point" : true  },
@@ -66,12 +26,57 @@ var areastacked2 =
             "x": {
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year",
-                //"axis": {"format": "%Y"}
+                "timeUnit" :"year"
+
             },
             "y": {
-                "aggregate": "sum",
-                "field": "Anzahl",
+
+                "field": "prozent",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Gruppe",
+                "scale": {"scheme": "paired"},
+                "legend":{
+                    "disable":"true"
+                }
+            }
+        }
+    }
+
+//Flächendiagramm für M Oost, Indische Buurt, Oostelijk Havengebied
+var areastacked2 =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für IJburg, Zeeburgereiland",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+
+                }
+            }
+        },
+        "transform": [
+            {"filter":"datum.Dimension ==='Mit Migrationshintergrund'"},
+            {"filter": "datum.Stadtteil ==='IJburg, Zeeburgereiland'"},
+            {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+
+        ],
+        "mark": {"type":"area","line":true, "point" : true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+
+                "field": "prozent",
                 "type":"quantitative"
             },
             "color": {
@@ -88,19 +93,22 @@ var areastacked2 =
 var areastacked3 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        description: "Flächendiagramm für K Zuid, Buitenveldert, Zuidas",
+        "description": "Flächendiagramm für Bijlmer-Centrum, Amstel III",
         "width": 600, "height": 200,
-        "data": {"url": "data/migration.json",
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
                 "parse": {
                     "Jahr": "number"
+
                 }
             }
         },
         "transform": [
-            {"filter": "datum.Stadtteil ==='DX11 Buitenveldert, Zuidas'"},
-            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+            {"filter":"datum.Dimension ==='Mit Migrationshintergrund'"},
+            {"filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"},
+            {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
 
         ],
         "mark": {"type":"area","line":true, "point" : true  },
@@ -108,12 +116,12 @@ var areastacked3 =
             "x": {
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year",
-                //"axis": {"format": "%Y"}
+                "timeUnit" :"year"
+
             },
             "y": {
-                "aggregate": "sum",
-                "field": "Anzahl",
+
+                "field": "prozent",
                 "type":"quantitative"
             },
             "color": {
