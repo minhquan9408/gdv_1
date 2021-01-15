@@ -1,5 +1,74 @@
 
 //Flächendiagramm für E West, Bos en Lommer
+var fläche2=
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"filter":"datum.Dimension !== 'Mit'"},
+            {
+                "filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+        ],
+        "mark": {"type":"area","line":true  },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+                "field": "Kennzahl",
+                "type":"quantitative"
+            },
+            "color": {
+                "field": "Dimension",
+                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]}
+
+            }
+        }
+    }
+var saldo=
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 600, "height": 200,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"filter":"datum.Dimension === 'Saldo'"},
+            {
+                "filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"},
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+        ],
+        "mark": {"type":"line","line":true },
+        "encoding": {
+            "x": {
+                "field": "Jahr",
+                "type": "ordinal",
+                "timeUnit" :"year"
+
+            },
+            "y": {
+                "field": "Kennzahl",
+                "type":"quantitative"
+            }
+        }
+    }
 var areastacked1 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
