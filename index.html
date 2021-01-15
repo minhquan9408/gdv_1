@@ -5,24 +5,36 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
 <script src="grafik.js"></script>
-    <h1>Urban Avengers</h1>
+    <div class="title">
+        <h1>Urban Avengers Dashboard</h1>
+        </div>
+    <div id="map"></div>
+    <div class="container">
+        <div class ="left">
+            <div id="area1" ></div>
+            <div id="area2" ></div>
+            <div id="area3"></div>
+        </div>
 
-    <div id="vis1"></div>
-    <div id="vis2"></div>
-    <div id="vis3"></div>
-    <div id="vis4"></div>
-<div id="vis5"></div>
+        <div class ="center">
+            <div id="mid1" ></div>
+            <div id="mid2" ></div>
+            <div id="mid3"></div>
+        </div>
+
+    </div>
+
+
     <script type="text/javascript">
-      //vegaEmbed("#vis", beispiel1);
-      //vegaEmbed("#vis2", beispiel2);
-      vegaEmbed("#vis1", areastacked1);
-      vegaEmbed("#vis2", areastacked2);
-      vegaEmbed("#vis3", areastacked3);
-      vegaEmbed("#vis4", kreis);
-      vegaEmbed("#vis5", map4)
+      vegaEmbed("#map", map4);
+      vegaEmbed("#area1", areastacked1);
+      vegaEmbed("#area2", areastacked2);
+      vegaEmbed("#area3", areastacked3);
+      //vegaEmbed("#vis4", kreis);
     </script>
   </body>
 </html>
