@@ -299,53 +299,55 @@ var kreis =
      }
      */
 
-var map3=
+var map=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        "width": 200,
-        "height": 200,
+        "width": 500,
+        "height": 300,
         "data": {
-            "url": "geojson.json",
+            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
             "format": {
-                "property":"properties"
-            }
+                "property": "features"}
         },
         "transform": [
-            //  {"filter": "isValid(datum.Gebied_code)"}
             {
-                "lookup": "id",
+                "lookup": "properties.Gebied_naam",
                 "from": {
                     "data": {
-                        "url": "data/bevolkerung-2019.csv"
+                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
+                        "format":{
+                            "type":"json",
+                            "parse":{
+                                "Jahr":"number"
+                            }
+                        },
+                        "transform": [
+                            {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+                            {"filter":"datum.Jahr ===2019"}]
                     },
-                    "key": "Gebied_code",
-                    "fields": ["anzahl"]
+
+                    "key": "Stadtteil",
+                    "fields": ["Kennzahl"]
                 }
-            }],
-        "projection": {
-            "type": "albersUsa"
+            }
+        ],
+        "projection": {"type": "mercator"},
+        "mark": {
+            "type": "geoshape",
+            "stroke": "#757575",
+            "strokeWidth": 0.5
         },
-        "mark": "geoshape",
         "encoding": {
             "color": {
-                "field": "anzahl",
-                "type": "quantitative"
-            }
+                "field": "Kennzahl",
+                "type": "quantitative",
+                "scale":{"scheme":"Blues"}
+            },
+            "tooltip": [
+                {"field": "properties.Gebied_naam", "type": "nominal", "title": "Name"},
+                {"field":"Kennzahl",
+                    "type": "quantitative",
+                    "title":"Migrationshintergrund Ratio"}
+            ]
         }
-    };
-
-var map4 =
-    {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "width": 300,
-    "height": 200,
-    "config": {"view": {"stroke": "transparent"}},
-    "data": {
-    "url": "geojson.json",
-        "format": {
-        "type": "topojson",
-            "feature": "features"}
-},
-    "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
-    "encoding": {"color": {"value": "#eee"}}
-}
+    }
