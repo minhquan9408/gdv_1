@@ -12,32 +12,52 @@
     <div class="title">
         <h1>Urban Avengers Dashboard</h1>
         </div>
-    <div id="map"></div>
+
     <div class="container">
-        <div class ="left">
-            <div id="area1" ></div>
-            <div id="area2" ></div>
-            <div id="area3"></div>
+        <div class ="container-item left">
+            <div>
+                Jahr
+                <select type="text" id="dropBox" onchange="changeSelect()">
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+
+                </select>
+            </div>
+
+            <div class="map" id="map19"></div>
         </div>
 
-        <div class ="center">
-            <div id="mid1" ></div>
-            <div id="mid2" ></div>
+        <div class ="container-item center">
+            <div id="mid1"></div>
+            <div id="mid2"></div>
             <div id="mid3"></div>
         </div>
-
+        <div class ="container-item right">
+            <div id="right1"></div>
+            <div id="right2"></div>
+            <div id="right3"></div>
+        </div>
     </div>
 
 
+
     <script type="text/javascript">
-      vegaEmbed("#map", map);
-      vegaEmbed("#area1", migration1);
-      vegaEmbed("#area2", migration2);
-      vegaEmbed("#area3", migration3);
-      vegaEmbed("#mid1", bewegung1);
-      vegaEmbed("#mid2", bewegung2);
-      vegaEmbed("#mid3", bewegung3);
-      //vegaEmbed("#vis4", kreis);
+      vegaEmbed("#map19", map19);
+      vegaEmbed("#mapp18", map18);
+      vegaEmbed("#mid1", migration1);
+      vegaEmbed("#mid2", migration2);
+      vegaEmbed("#mid3", migration3);
+      vegaEmbed("#right1", bewegung1);
+      vegaEmbed("#right2", bewegung2);
+      vegaEmbed("#right3", bewegung3);
     </script>
   </body>
 </html>

@@ -1,88 +1,42 @@
 .title{
 text-align: center;
 }
-#map{
-    display: flex;
-    width: 350px;
-    height: 250px;
-    justify-content: center;
-    margin:  auto;
-    position: relative;
-    border: 3px solid #73AD21;
-    padding: 10px;
-}
-
 .container{
-    border: 3px solid blue;
-    height: 700px;
+    margin-top: 36px;
+    padding: 12px 0;
+    display: flex;
+   width: 100%;
+    flex-basis: auto;
 
 }
-
+.container-item{
+    padding: 0 16px;
+    flex: 1;
+    border: 3px solid black;
+    display: flex;
+}
 .left{
-    float: left;
-    margin:  auto;
-    position: relative;
-    width: 30%;
-    height: 700px;
-    border: darkred;
-    padding: 10px;
-}
-#area1{
-    float: left;
-    margin:  auto;
-    position: relative;
-    width: 30%;
-    height: 200px;
-
-    padding: 10px;
-}
-#area2{
-    clear: both;
-     float: left;
-     margin:  auto;
-     position: relative;
-     width: 30%;
-     height: 200px;
-
-     padding: 10px;
- }
-#area3{
-    clear: both;
-      float: left;
-      margin:  auto;
-      position: relative;
-      width: 30%;
-      height: 200px;
-
-      padding: 10px;
-  }
-#mid1{
     display: flex;
-    width: 350px;
-    height: 250px;
-    justify-content: center;
-    margin:  auto;
-    position: relative;
-    border: 3px solid #73AD21;
-    padding: 10px;
+    flex-direction: column;
+
+
 }
-#mid2{
+.map{
+    margin: auto;
+}
+.center{
+    padding: 0 16px;
+    flex: 1;
     display: flex;
-    width: 350px;
-    height: 250px;
-    justify-content: center;
-    margin:  auto;
-    position: relative;
-    border: 3px solid #73AD21;
-    padding: 10px;
+    flex-direction: column;
+
 }
-#mid3{
+.right{
+    padding: 0 16px;
+    flex: 1;
+
     display: flex;
-    width: 350px;
-    height: 250px;
-    justify-content: center;
-    margin:  auto;
-    position: relative;
-    border: 3px solid #73AD21;
-    padding: 10px;
+    flex-direction: column;
 }
+
+
