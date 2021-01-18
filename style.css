@@ -7,12 +7,13 @@ text-align: center;
     display: flex;
    width: 100%;
     flex-basis: auto;
+    flex-wrap: wrap;
 
 }
 .container-item{
     padding: 0 16px;
     flex: 1;
-    border: 3px solid black;
+
     display: flex;
 }
 .left{
@@ -22,7 +23,7 @@ text-align: center;
 
 }
 .map{
-    margin: auto;
+    display: none ;
 }
 .center{
     padding: 0 16px;

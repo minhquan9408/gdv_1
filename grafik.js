@@ -4,8 +4,8 @@ var migration1 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Buitenveldert, Zuidas",
-        "title":"Migrationshintergrund von Stadtteile",
-        "width": 600, "height": 250,
+        "title":"Anteil Migrationshintergrund von Stadtteile (in %)",
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -55,7 +55,7 @@ var migration2 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für IJburg, Zeeburgereiland",
-        "width": 600, "height": 250,
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -105,7 +105,7 @@ var migration3 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Bijlmer-Centrum, Amstel III",
-        "width": 600, "height": 250,
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -156,7 +156,7 @@ var bewegung1=
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
         "title":"Bewegungsdiagramm von Stadtteile",
-        "width": 600, "height": 250,
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -201,7 +201,7 @@ var bewegung2=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "width": 600, "height": 250,
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -248,7 +248,7 @@ var bewegung3=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "width": 600, "height": 250,
+        "width": 600, "height": 300,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -335,30 +335,14 @@ var kreis =
      */
 
 //Filter für Karte nach Jahren
-function changeSelect() {
-    if (document.getElementById("dropBox").value == "2018") {
-        document.getElementsByClassName("map").id = "mapp18";
-    }
-    /*
-    else if (document.getElementById("dropBox").value == "2") {
-        document.getElementById("divText").innerHTML = "[HEADER] [DATE] [COUNT] ...";
-    } else if (document.getElementById("dropBox").value == "3") {
-        document.getElementById("divText").innerHTML = "[HEADER] ...";
-    } else if (document.getElementById("dropBox").value == "4") {
-        document.getElementById("divText").innerHTML = "NOTE [DATE] ...";
-    }
-    */
 
-}
-
-
-
+/*
 var map19=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "width": 400,
         "height": 600,
-        "title":"Migrationshintergrund Ration von Jahr 2019",
+        "title":"Migrationshintergrund Ratio von Jahr 2019",
         "data": {
             "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
             "format": {
@@ -394,7 +378,7 @@ var map19=
         },
         "encoding": {
             "color": {
-                "field": "Kennzahl",
+                "field": "Kennzahl", "title":"Anteil von Menschen mit Migrationshintergrund",
                 "type": "quantitative",
                 "scale":{"scheme":"Blues"}
             },
@@ -460,42 +444,525 @@ var map18=
             ]
         }
     }
-    /*
-    var mapp18 ={
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
-    "format":{
-      "type":"json",
-      "parse":{
-        "Jahr":"number"
-      }
-    }
-  },
-  "transform": [
-    {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-    {"filter":"datum.Jahr ===2019"},
-    {
-      "lookup": "Stadtteil",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
-          "format": {
-            "property": "features"
-          }
-        },
-        "key": "properties.Gebied_naam"
-      },
-      "as": "geo"
-    }
-  ],
-  "projection": {"type": "mercator"},
-  "mark": "geoshape",
-  "encoding": {
-    "shape": {"field": "geo", "type": "geojson"},
-    "color": {"field": "Kennzahl", "type": "quantitative"}
-  }
-}
 */
+    var map19 ={
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "title":"Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
+        "width": 600,
+        "height": 900,
+        "data": {
+            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+            "format":{
+                "type":"json",
+                "parse":{
+                    "Jahr":"number"
+                }
+            }
+        },
+        "transform": [
+            {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+            {"filter":"datum.Jahr ===2019"},
+            {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+            {
+                "lookup": "Stadtteil",
+                "from": {
+                    "data": {
+                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                        "format": {
+                            "property": "features"
+                        }
+                    },
+                    "key": "properties.Gebied_naam"
+                },
+                "as": "geo"
+            }
+        ],
+        "projection": {"type": "mercator"},
+        "mark": {
+            "type":"geoshape",
+            "stroke":"black",
+            "strokeWidth": 0.2
+        },
+        "encoding": {
+            "shape": {"field": "geo", "type": "geojson"},
+            "color": {"field": "prozent",
+                "title":"%",
+                "type": "quantitative"},
+            "tooltip": [
+                {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+                {"field":"prozent",
+                    "format":".1f",
+                    "type": "quantitative",
+                    "title":"Anteil in %"}
+            ]
+        }
+    }
+var map18 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2018"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+
+var map17 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2017"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map16 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2016"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map15 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2015"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map14 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2014"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map13 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2013"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map12 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2012"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map11 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2011"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
+var map10 ={
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "width": 600,
+    "height": 900,
+    "data": {
+        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+        "format":{
+            "type":"json",
+            "parse":{
+                "Jahr":"number"
+            }
+        }
+    },
+    "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter":"datum.Jahr ===2010"},
+        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+        {
+            "lookup": "Stadtteil",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                    "format": {
+                        "property": "features"
+                    }
+                },
+                "key": "properties.Gebied_naam"
+            },
+            "as": "geo"
+        }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type":"geoshape",
+        "stroke":"black",
+        "strokeWidth": 0.2
+    },
+    "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {"field": "prozent",
+            "title":"%",
+            "type": "quantitative"},
+        "tooltip": [
+            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+            {"field":"prozent",
+                "format":".1f",
+                "type": "quantitative",
+                "title":"Anteil in %"}
+        ]
+    }
+}
