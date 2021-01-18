@@ -44,7 +44,7 @@ var migration1 =
                 }
             },
             "tooltip":[
-                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund"},
+                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
                 {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
             ]
         }
@@ -94,7 +94,7 @@ var migration2 =
                 }
             },
             "tooltip":[
-                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund"},
+                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
                 {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
             ]
         }
@@ -144,7 +144,7 @@ var migration3 =
                 }
             },
             "tooltip":[
-                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund"},
+                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
                 {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
             ]
         }
@@ -282,7 +282,11 @@ var bewegung3=
                 "legend":{
                     "disable":"true"
                 }
-            }
+            },
+            "tooltip":[
+                {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+            ]
         }
     }
 //Kreis Diagramm Stolervaart 2019
@@ -552,7 +556,7 @@ var map18 ={
 
 var map17 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2017 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -604,7 +608,7 @@ var map17 ={
 }
 var map16 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2016 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -656,7 +660,7 @@ var map16 ={
 }
 var map15 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2015 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -708,7 +712,7 @@ var map15 ={
 }
 var map14 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2014 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -760,7 +764,7 @@ var map14 ={
 }
 var map13 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2013 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -812,7 +816,7 @@ var map13 ={
 }
 var map12 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2012 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -864,7 +868,7 @@ var map12 ={
 }
 var map11 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2011 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
@@ -916,7 +920,7 @@ var map11 ={
 }
 var map10 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":"Anteil mit Migrationshintergrund von Jahr 2010 in Prozent",
     "width": 600,
     "height": 900,
     "data": {
