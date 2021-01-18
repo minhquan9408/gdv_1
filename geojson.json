@@ -976,9 +976,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Buitenveldert, Zuidas",
         "Stadsdeel_code": "K",
-        "Opp_m2": 7852861
+        "Opp_m2": 7852861,
+        "Gebied_naam": "Buitenveldert, Zuidas"
       }
     },
     {
@@ -2214,9 +2214,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Centrum-Oost",
         "Stadsdeel_code": "A",
-        "Opp_m2": 4580454
+        "Opp_m2": 4580454,
+        "Gebied_naam": "Centrum-Oost"
       }
     },
     {
@@ -3426,9 +3426,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Oud-Zuid",
         "Stadsdeel_code": "K",
-        "Opp_m2": 5403522
+        "Opp_m2": 5403522,
+        "Gebied_naam": "Oud-Zuid"
       }
     },
     {
@@ -4216,9 +4216,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "IJburg, Zeeburgereiland",
         "Stadsdeel_code": "M",
-        "Opp_m2": 13787080
+        "Opp_m2": 13787080,
+        "Gebied_naam": "IJburg, Zeeburgereiland"
       }
     },
     {
@@ -4940,9 +4940,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Osdorp",
         "Stadsdeel_code": "F",
-        "Opp_m2": 9174622
+        "Opp_m2": 9174622,
+        "Gebied_naam": "Osdorp"
       }
     },
     {
@@ -6384,9 +6384,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Noord-Oost",
         "Stadsdeel_code": "N",
-        "Opp_m2": 46477771
+        "Opp_m2": 46477771,
+        "Gebied_naam": "Noord-Oost"
       }
     },
     {
@@ -7384,9 +7384,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Gaasperdam, Driemond",
         "Stadsdeel_code": "T",
-        "Opp_m2": 9605922
+        "Opp_m2": 9605922,
+        "Gebied_naam": "Gaasperdam, Driemond"
       }
     },
     {
@@ -8468,9 +8468,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Watergraafsmeer",
         "Stadsdeel_code": "M",
-        "Opp_m2": 9026991
+        "Opp_m2": 9026991,
+        "Gebied_naam": "Watergraafsmeer"
       }
     },
     {
@@ -9364,9 +9364,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Oud-West, De Baarsjes",
         "Stadsdeel_code": "E",
-        "Opp_m2": 3327143
+        "Opp_m2": 3327143,
+        "Gebied_naam": "Oud-West, De Baarsjes"
       }
     },
     {
@@ -10238,9 +10238,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Oud-Oost",
         "Stadsdeel_code": "M",
-        "Opp_m2": 2193051
+        "Opp_m2": 2193051,
+        "Gebied_naam": "Oud-Oost"
       }
     },
     {
@@ -10598,9 +10598,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Bijlmer-Oost",
         "Stadsdeel_code": "T",
-        "Opp_m2": 4075928
+        "Opp_m2": 4075928,
+        "Gebied_naam": "Bijlmer-Oost"
       }
     },
     {
@@ -11210,9 +11210,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Centrum-West",
         "Stadsdeel_code": "A",
-        "Opp_m2": 3463228
+        "Opp_m2": 3463228,
+        "Gebied_naam": "Centrum-West"
       }
     },
     {
@@ -11830,9 +11830,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "De Pijp, Rivierenbuurt",
         "Stadsdeel_code": "K",
-        "Opp_m2": 4017825
+        "Opp_m2": 4017825,
+        "Gebied_naam": "De Pijp, Rivierenbuurt"
       }
     },
     {
@@ -12462,9 +12462,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "De Aker, Sloten, Nieuw-Sloten",
         "Stadsdeel_code": "F",
-        "Opp_m2": 7584546
+        "Opp_m2": 7584546,
+        "Gebied_naam": "De Aker, Sloten, Nieuw-Sloten"
       }
     },
     {
@@ -13162,9 +13162,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Sloterdijken",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "F",
-        "Opp_m2": 7699097
+        "Opp_m2": 7699097,
+        "Gebied_naam": "Sloterdijken"
       }
     },
     {
@@ -13838,9 +13843,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Westerpark",
         "Stadsdeel_code": "E",
-        "Opp_m2": 5068157
+        "Opp_m2": 5068157,
+        "Gebied_naam": "Westerpark"
       }
     },
     {
@@ -14310,9 +14315,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Bos en Lommer",
         "Stadsdeel_code": "E",
-        "Opp_m2": 2234750
+        "Opp_m2": 2234750,
+        "Gebied_naam": "Bos en Lommer"
       }
     },
     {
@@ -15126,9 +15131,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Oostelijk Havengebied",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "M",
-        "Opp_m2": 3812184
+        "Opp_m2": 3812184,
+        "Gebied_naam": "Indische Buurt"
       }
     },
     {
@@ -15622,9 +15632,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Indische Buurt",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "M",
-        "Opp_m2": 1775745
+        "Opp_m2": 1775745,
+        "Gebied_naam": "Oostelijk Havengebied"
       }
     },
     {
@@ -15914,9 +15929,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Bijlmer-Centrum",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "T",
-        "Opp_m2": 3158117
+        "Opp_m2": 3158117,
+        "Gebied_naam": "Bijlmer-Centrum"
       }
     },
     {
@@ -16630,9 +16650,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Amstel III",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "T",
-        "Opp_m2": 5273642
+        "Opp_m2": 5273642,
+        "Gebied_naam": "Amstel III"
       }
     },
     {
@@ -17514,9 +17539,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Slotervaart",
         "Stadsdeel_code": "F",
-        "Opp_m2": 5898979
+        "Opp_m2": 5898979,
+        "Gebied_naam": "Slotervaart"
       }
     },
     {
@@ -17998,9 +18023,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Oud-Noord",
         "Stadsdeel_code": "N",
-        "Opp_m2": 7613555
+        "Opp_m2": 7613555,
+        "Gebied_naam": "Oud-Noord"
       }
     },
     {
@@ -19286,9 +19311,9 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Noord-West",
         "Stadsdeel_code": "N",
-        "Opp_m2": 9737197
+        "Opp_m2": 9737197,
+        "Gebied_naam": "Noord-West"
       }
     },
     {
@@ -19966,9 +19991,14 @@
         ]
       },
       "properties": {
-        "Gebied25_naam": "Geuzenveld, Slotermeer",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "Stadsdeel_code": "F",
-        "Opp_m2": 7658145
+        "Opp_m2": 7658145,
+        "Gebied_naam": "Geuzenveld, Slotermeer"
       }
     }
   ]
