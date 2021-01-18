@@ -2,15 +2,9 @@
 <html>
   <head>
     <title>Dashboard Urban Avengers</title>
-
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -23,30 +17,22 @@
         <div class ="container-item left">
             <div>
                 Jahr
-                <select type="text" id="dropBox" >
-                    <option value="map19">2019</option>
-                    <option value="map18">2018</option>
-                    <option value="map17">2017</option>
-                    <option value="map16">2016</option>
-                    <option value="map15">2015</option>
-                    <option value="map14">2014</option>
-                    <option value="map13">2013</option>
-                    <option value="map12">2012</option>
-                    <option value="map11">2011</option>
-                    <option value="map10">2010</option>
+                <select type="text" id="dropBox" onchange="changeSelect()">
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
 
                 </select>
             </div>
+
             <div class="map" id="map19"></div>
-            <div class="map" id="map18"></div>
-            <div class="map" id="map17"></div>
-            <div class="map" id="map16"></div>
-            <div class="map" id="map15"></div>
-            <div class="map" id="map14"></div>
-            <div class="map" id="map13"></div>
-            <div class="map" id="map12"></div>
-            <div class="map" id="map11"></div>
-            <div class="map" id="map10"></div>
         </div>
 
         <div class ="container-item center">
@@ -65,15 +51,7 @@
 
     <script type="text/javascript">
       vegaEmbed("#map19", map19);
-      vegaEmbed("#map19", map18);
-      vegaEmbed("#map17", map17);
-      vegaEmbed("#map16", map16);
-      vegaEmbed("#map15", map15);
-      vegaEmbed("#map14", map14);
-      vegaEmbed("#map13", map13);
-      vegaEmbed("#map12", map12);
-      vegaEmbed("#map11", map11);
-      vegaEmbed("#map10", map10);
+      vegaEmbed("#mapp18", map18);
       vegaEmbed("#mid1", migration1);
       vegaEmbed("#mid2", migration2);
       vegaEmbed("#mid3", migration3);
@@ -81,14 +59,5 @@
       vegaEmbed("#right2", bewegung2);
       vegaEmbed("#right3", bewegung3);
     </script>
-
-<script>
-    $(document).ready(function (){
-       $("#dropBox").on('change',function (){
-           $(".map").hide();
-           $("#" + $(this).val()).fadeIn(700);
-       }).change();
-    });
-</script>
   </body>
 </html>
