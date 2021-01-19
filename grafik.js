@@ -4,8 +4,11 @@ var migration1 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Buitenveldert, Zuidas",
-        "title":"Anteil Migrationshintergrund von Stadtteile (in %)",
-        "width": 600, "height": 300,
+        "title":{
+            "text":"Anteil Migrationshintergrund von Stadtteile (in %)",
+            "fontSize": 20
+        },
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -28,13 +31,20 @@ var migration1 =
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "Buitenveldert, Zuidas",
                 "field": "prozent",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Gruppe",
@@ -55,7 +65,7 @@ var migration2 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für IJburg, Zeeburgereiland",
-        "width": 600, "height": 300,
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -78,13 +88,20 @@ var migration2 =
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "IJburg, Zeeburgereiland",
                 "field": "prozent",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Gruppe",
@@ -105,7 +122,7 @@ var migration3 =
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Bijlmer-Centrum, Amstel III",
-        "width": 600, "height": 300,
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
             "format": {
                 "type": "json",
@@ -128,13 +145,20 @@ var migration3 =
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "Bijlmer-Centrum, Amstel III",
                 "field": "prozent",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Gruppe",
@@ -155,8 +179,11 @@ var bewegung1=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "title":"Bewegungsdiagramm von Stadtteile",
-        "width": 600, "height": 300,
+        "title":{
+            "text":"Bewegungsdiagramm von Stadtteile",
+            "fontSize": 20
+        },
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -176,18 +203,29 @@ var bewegung1=
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "Buitenveldert, Zuidas",
                 "field": "Kennzahl",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Dimension",
-                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]}
+                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]},
+                "legend":{
+                    "labelFontSize": 13,
+                    "titleFontSize": 20
 
+                }
             },
             "tooltip":[
                 {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
@@ -201,7 +239,7 @@ var bewegung2=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "width": 600, "height": 300,
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -221,13 +259,20 @@ var bewegung2=
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "IJburg, Zeeburgereiland",
                 "field": "Kennzahl",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Dimension",
@@ -248,7 +293,7 @@ var bewegung3=
     {
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "width": 600, "height": 300,
+        "width": 600, "height": 280,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/Prototyp.json",
             "format": {
                 "type": "json",
@@ -268,13 +313,20 @@ var bewegung3=
                 "title":"",
                 "field": "Jahr",
                 "type": "ordinal",
-                "timeUnit" :"year"
+                "timeUnit" :"year",
+                "axis": {
+                    "labelFontSize":13
+                }
 
             },
             "y": {
                 "title": "Bijlmer-Centrum, Amstel III",
                 "field": "Kennzahl",
-                "type":"quantitative"
+                "type":"quantitative",
+                "axis": {
+                    "labelFontSize":13,
+                    "titleFontSize":16
+                }
             },
             "color": {
                 "field": "Dimension",
@@ -451,7 +503,10 @@ var map18=
 */
     var map19 ={
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        "title":"Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
+        "title":{
+            "text":"Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
+            "fontSize": 20
+        },
         "width": 600,
         "height": 900,
         "data": {
@@ -491,7 +546,12 @@ var map18=
             "shape": {"field": "geo", "type": "geojson"},
             "color": {"field": "prozent",
                 "title":"%",
-                "type": "quantitative"},
+                "type": "quantitative",
+                "legend":{
+                    "labelFontSize": 13,
+                    "titleFontSize": 20
+
+                }},
             "tooltip": [
                 {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
                 {"field":"prozent",
@@ -503,7 +563,10 @@ var map18=
     }
 var map18 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2018 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -543,7 +606,12 @@ var map18 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -556,7 +624,10 @@ var map18 ={
 
 var map17 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2017 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2017 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -596,7 +667,12 @@ var map17 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -608,7 +684,10 @@ var map17 ={
 }
 var map16 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2016 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2016 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -648,7 +727,12 @@ var map16 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -660,7 +744,10 @@ var map16 ={
 }
 var map15 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2015 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2015 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -700,7 +787,12 @@ var map15 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -712,7 +804,10 @@ var map15 ={
 }
 var map14 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2014 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2014 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -752,7 +847,12 @@ var map14 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -764,7 +864,10 @@ var map14 ={
 }
 var map13 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2013 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2013 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -804,7 +907,12 @@ var map13 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -816,7 +924,10 @@ var map13 ={
 }
 var map12 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2012 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2012 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -856,7 +967,12 @@ var map12 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -868,7 +984,10 @@ var map12 ={
 }
 var map11 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2011 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2011 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -908,7 +1027,12 @@ var map11 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
@@ -920,7 +1044,10 @@ var map11 ={
 }
 var map10 ={
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":"Anteil mit Migrationshintergrund von Jahr 2010 in Prozent",
+    "title":{
+        "text":"Anteil mit Migrationshintergrund von Jahr 2010 in Prozent",
+        "fontSize": 20
+    },
     "width": 600,
     "height": 900,
     "data": {
@@ -960,7 +1087,12 @@ var map10 ={
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
-            "type": "quantitative"},
+            "type": "quantitative",
+            "legend":{
+                "labelFontSize": 13,
+                "titleFontSize": 20
+
+            }},
         "tooltip": [
             {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
             {"field":"prozent",
