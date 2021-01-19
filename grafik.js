@@ -5,7 +5,7 @@ var migration1 =
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "description": "Flächendiagramm für Buitenveldert, Zuidas",
         "title":{
-            "text":"Anteil Migrationshintergrund von Stadtteile (in %)",
+            "text":"Anteil Migrationshintergrund von Stadtteile in Prozent",
             "fontSize": 20
         },
         "width": 600, "height": 280,
@@ -193,45 +193,74 @@ var bewegung1=
         },
         "transform": [
             {"filter":"datum.Dimension !== 'Mit'"},
-            {
-                "filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
+            {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"},
+
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
         ],
-        "mark": {"type":"area","line":true  },
-        "encoding": {
-            "x": {
-                "title":"",
-                "field": "Jahr",
-                "type": "ordinal",
-                "timeUnit" :"year",
-                "axis": {
-                    "labelFontSize":13
-                }
+        "layer": [{ "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
 
-            },
-            "y": {
-                "title": "Buitenveldert, Zuidas",
-                "field": "Kennzahl",
-                "type":"quantitative",
-                "axis": {
-                    "labelFontSize":13,
-                    "titleFontSize":16
-                }
-            },
-            "color": {
-                "field": "Dimension",
-                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]},
-                "legend":{
-                    "labelFontSize": 13,
-                    "titleFontSize": 20
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "Buitenveldert, Zuidas",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
 
                 }
-            },
-            "tooltip":[
-                {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
-                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
-            ]
-        }
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+
+                    },
+                    "y": {
+                        "title": "Buitenveldert, Zuidas",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                    "color": {
+                        "sort": {"field": "Dimension", "order":"descending"},
+                        "field": "Dimension",
+                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
+                        "legend":{
+                            "labelFontSize": 11,
+                            "titleFontSize": 20
+                        }
+                    },
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
+                }
+            }
+
+        ]
     }
 
 //Flächendiagramm für Bewegung  Bijlmer-Centrum, Amstel III
@@ -249,43 +278,73 @@ var bewegung2=
         },
         "transform": [
             {"filter":"datum.Dimension !== 'Mit'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
             {
                 "filter": "datum.Stadtteil ==='IJburg, Zeeburgereiland'"},
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
         ],
-        "mark": {"type":"area","line":true  },
-        "encoding": {
-            "x": {
-                "title":"",
-                "field": "Jahr",
-                "type": "ordinal",
-                "timeUnit" :"year",
-                "axis": {
-                    "labelFontSize":13
-                }
+        "layer": [{ "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
 
-            },
-            "y": {
-                "title": "IJburg, Zeeburgereiland",
-                "field": "Kennzahl",
-                "type":"quantitative",
-                "axis": {
-                    "labelFontSize":13,
-                    "titleFontSize":16
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "IJburg, Zeeburgereiland",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
+
                 }
-            },
-            "color": {
-                "field": "Dimension",
-                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]},
-                "legend":{
-                    "disable":"true"
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+
+                    },
+                    "y": {
+                        "title": "IJburg, Zeeburgereiland",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                    "color": {
+                        "sort": {"field": "Dimension", "order":"descending"},
+                        "field": "Dimension",
+                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
+                        "legend":{
+                            "disable":"true"
+                        }
+                    },
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
                 }
-            },
-            "tooltip":[
-                {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
-                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
-            ]
-        }
+            }
+
+        ]
     }
 
 //Flächendiagramm für Bewegung  Bijlmer-Centrum, Amstel III
@@ -303,43 +362,74 @@ var bewegung3=
         },
         "transform": [
             {"filter":"datum.Dimension !== 'Mit'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
             {
                 "filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"},
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
         ],
-        "mark": {"type":"area","line":true  },
-        "encoding": {
-            "x": {
-                "title":"",
-                "field": "Jahr",
-                "type": "ordinal",
-                "timeUnit" :"year",
-                "axis": {
-                    "labelFontSize":13
-                }
+        "layer": [
+            { "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
 
-            },
-            "y": {
-                "title": "Bijlmer-Centrum, Amstel III",
-                "field": "Kennzahl",
-                "type":"quantitative",
-                "axis": {
-                    "labelFontSize":13,
-                    "titleFontSize":16
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "Bijlmer-Centrum, Amstel III",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
+
                 }
-            },
-            "color": {
-                "field": "Dimension",
-                "scale": {"range": [ "#A50909", "#F08383","#169608","#8AD382", "#000000"]},
-                "legend":{
-                    "disable":"true"
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+
+                    },
+                    "y": {
+                        "title": "Bijlmer-Centrum, Amstel III",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                    "color": {
+                        "sort": {"field": "Dimension", "order":"descending"},
+                        "field": "Dimension",
+                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
+                        "legend":{
+                            "disable":"true"
+                        }
+                    },
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
                 }
-            },
-            "tooltip":[
-                {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
-                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
-            ]
-        }
+            }
+
+        ]
     }
 //Kreis Diagramm Stolervaart 2019
 var kreis =
@@ -363,144 +453,7 @@ var kreis =
         }],
         "view": {"stroke": null}
     }
-    /*
- var kreis1 =
-     {
-         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-         "description": "A simple pie chart with labels.",
-         "data": { url : "data/bewegung.json"
-         },
-         transform :[
-             {filter: datum.Jahr == 2019},
-             {filter: datum.Stadtteil ==="DX09 Slotervaart" }
-         ],
-         "encoding": {
-             "theta": {"field": "Anzahl", "aggregate":"sum", "type": "quantitative", "stack": true},
-             "color": {"field": "Gruppe", "type": "nominal"}
-         },
-         "layer": [{
-             "mark": {"type": "arc", "outerRadius": 80}
-         }, {
-             "mark": {"type": "text", "radius": 90},
-             "encoding": {
-                 "text": {"field": "Gruppe", "type": "nominal"}
-             }
-         }],
-         "view": {"stroke": null}
-     }
-     */
 
-//Filter für Karte nach Jahren
-
-/*
-var map19=
-    {
-        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        "width": 400,
-        "height": 600,
-        "title":"Migrationshintergrund Ratio von Jahr 2019",
-        "data": {
-            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
-            "format": {
-                "property": "features"}
-        },
-        "transform": [
-            {
-                "lookup": "properties.Gebied_naam",
-                "from": {
-                    "data": {
-                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
-                        "format":{
-                            "type":"json",
-                            "parse":{
-                                "Jahr":"number"
-                            }
-                        },
-                        "transform": [
-                            {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-                            {"filter":"datum.Jahr ===2019"}]
-                    },
-
-                    "key": "Stadtteil",
-                    "fields": ["Kennzahl"]
-                }
-            }
-        ],
-        "projection": {"type": "mercator"},
-        "mark": {
-            "type": "geoshape",
-            "stroke": "#757575",
-            "strokeWidth": 0.5
-        },
-        "encoding": {
-            "color": {
-                "field": "Kennzahl", "title":"Anteil von Menschen mit Migrationshintergrund",
-                "type": "quantitative",
-                "scale":{"scheme":"Blues"}
-            },
-            "tooltip": [
-                {"field": "properties.Gebied_naam", "type": "nominal", "title": "Name"},
-                {"field":"Kennzahl",
-                    "type": "quantitative",
-                    "title":"Migrationshintergrund Ratio"}
-            ]
-        }
-    }
-
-var map18=
-    {
-        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        "width": 500,
-        "height": 800,
-        "title":"Migrationshintergrund Ration von Jahr 2018",
-        "data": {
-            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/geojson.json",
-            "format": {
-                "property": "features"}
-        },
-        "transform": [
-            {
-                "lookup": "properties.Gebied_naam",
-                "from": {
-                    "data": {
-                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/main/data/prototyp.json",
-                        "format":{
-                            "type":"json",
-                            "parse":{
-                                "Jahr":"number"
-                            }
-                        },
-                        "transform": [
-                            {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-                            {"filter":"datum.Jahr ===2018"}]
-                    },
-
-                    "key": "Stadtteil",
-                    "fields": ["Kennzahl"]
-                }
-            }
-        ],
-        "projection": {"type": "mercator"},
-        "mark": {
-            "type": "geoshape",
-            "stroke": "#757575",
-            "strokeWidth": 0.5
-        },
-        "encoding": {
-            "color": {
-                "field": "Kennzahl",
-                "type": "quantitative",
-                "scale":{"scheme":"Blues"}
-            },
-            "tooltip": [
-                {"field": "properties.Gebied_naam", "type": "nominal", "title": "Name"},
-                {"field":"Kennzahl",
-                    "type": "quantitative",
-                    "title":"Migrationshintergrund Ratio"}
-            ]
-        }
-    }
-*/
     var map19 ={
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
         "title":{
