@@ -496,6 +496,10 @@ var kreis =
             "strokeWidth": 0.2
         },
         "encoding": {
+            "strokeWidth": {
+                "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+                ]
+            },
             "shape": {"field": "geo", "type": "geojson"},
             "color": {"field": "prozent",
                 "title":"%",
@@ -556,6 +560,10 @@ var map18 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -617,6 +625,10 @@ var map17 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -677,6 +689,10 @@ var map16 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -737,6 +753,10 @@ var map15 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -797,6 +817,10 @@ var map14 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -857,6 +881,10 @@ var map13 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -917,6 +945,10 @@ var map12 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -977,6 +1009,10 @@ var map11 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
@@ -1037,6 +1073,10 @@ var map10 ={
         "strokeWidth": 0.2
     },
     "encoding": {
+        "strokeWidth": {
+            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
+            ]
+        },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {"field": "prozent",
             "title":"%",
