@@ -245,13 +245,13 @@ var bewegung1=
                         }
                     },
                     "color": {
-                        "sort": {"field": "Dimension", "order":"descending"},
                         "field": "Dimension",
-                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
+                        "scale": {"range": [ "#199013","#6DC568","#E17C75","#A42016"]},
                         "legend":{
-                            "labelFontSize": 11,
+                            "labelFontSize": 13,
                             "titleFontSize": 20
-                        }
+
+                        },   "sort": {"op": "sum", "field": "Kennzahl", "order":"descending"}
                     },
                     "tooltip":[
                         {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
