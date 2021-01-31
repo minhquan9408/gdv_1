@@ -5,7 +5,7 @@ var map11 =
         "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
         "data": {
-            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
+            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/prototyp.json",
             "format": {"type": "json", "parse": {"Jahr": "number"}}
         },
         "hconcat": [
@@ -25,7 +25,7 @@ var map11 =
                                 "lookup": "Stadtteil",
                                 "from": {
                                     "data": {
-                                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+                                        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/geojson.json",
                                         "format": {"property": "features"}
                                     },
                                     "key": "properties.Gebied"
@@ -85,7 +85,7 @@ var map11 =
                                     "lookup": "Stadtteil",
                                     "from": {
                                         "data": {
-                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/geojson.json",
                                             "format": {"property": "features"}
                                         },
                                         "key": "properties.Gebied"
@@ -145,7 +145,7 @@ var map11 =
                                     "lookup": "Stadtteil",
                                     "from": {
                                         "data": {
-                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/geojson.json",
                                             "format": {"property": "features"}
                                         },
                                         "key": "properties.Gebied"
@@ -209,7 +209,7 @@ var map11 =
                                     "lookup": "Stadtteil",
                                     "from": {
                                         "data": {
-                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/geojson.json",
                                             "format": {"property": "features"}
                                         },
                                         "key": "properties.Gebied"
@@ -269,7 +269,7 @@ var map11 =
                                     "lookup": "Stadtteil",
                                     "from": {
                                         "data": {
-                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+                                            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/final/data/geojson.json",
                                             "format": {"property": "features"}
                                         },
                                         "key": "properties.Gebied"
