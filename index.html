@@ -15,80 +15,26 @@
 </head>
 <body>
 <script src="grafik.js"></script>
-<div class="title">
-    <h1>Urban Avengers Dashboard</h1>
+<div class="containerTitle">
+    <div class="containerTitle-item empty"></div>
+    <div class="containerTitle-item title">
+        <h1 class = "titlecenter">Urban A'dam</h1>
+        <h2 class = "titlecenter">Anteil von Menschen mit Migrationshintergrund und die Ein-/Auszüge in Amsterdam nach Stadtteil von 2010 bis 2019</h2>
+    </div>
+    <div class="containerTitle-item legend">
+        <img class="resize" src="img.png">
+    </div>
 </div>
+
 
 <div class="container">
-    <div class ="container-item left">
-        <div>
-            Jahr
-            <select type="text" id="dropBox" >
-                <option value="map19">2019</option>
-                <option value="map18">2018</option>
-                <option value="map17">2017</option>
-                <option value="map16">2016</option>
-                <option value="map15">2015</option>
-                <option value="map14">2014</option>
-                <option value="map13">2013</option>
-                <option value="map12">2012</option>
-                <option value="map11">2011</option>
-                <option value="map10">2010</option>
-
-            </select>
-        </div>
-        <div class="map" id="map19"></div>
-        <div class="map" id="map18"></div>
-        <div class="map" id="map17"></div>
-        <div class="map" id="map16"></div>
-        <div class="map" id="map15"></div>
-        <div class="map" id="map14"></div>
-        <div class="map" id="map13"></div>
-        <div class="map" id="map12"></div>
-        <div class="map" id="map11"></div>
-        <div class="map" id="map10"></div>
-    </div>
-
-    <div class ="container-item center">
-        <div id="mid1"></div>
-        <div id="mid2"></div>
-        <div id="mid3"></div>
-    </div>
-    <div class ="container-item right">
-        <div id="right1"></div>
-        <div id="right2"></div>
-        <div id="right3"></div>
-    </div>
+    <div class = "container-item mid" id="all"></div>
 </div>
-
 
 
 <script type="text/javascript">
-    vegaEmbed("#map19", map19);
-    vegaEmbed("#map18", map18);
-    vegaEmbed("#map17", map17);
-    vegaEmbed("#map16", map16);
-    vegaEmbed("#map15", map15);
-    vegaEmbed("#map14", map14);
-    vegaEmbed("#map13", map13);
-    vegaEmbed("#map12", map12);
-    vegaEmbed("#map11", map11);
-    vegaEmbed("#map10", map10);
-    vegaEmbed("#mid1", migration1);
-    vegaEmbed("#mid2", migration2);
-    vegaEmbed("#mid3", migration3);
-    vegaEmbed("#right1", bewegung1);
-    vegaEmbed("#right2", bewegung2);
-    vegaEmbed("#right3", bewegung3);
+    vegaEmbed("#all", map11);
 </script>
 
-<script>
-    $(document).ready(function (){
-        $("#dropBox").on('change',function (){
-            $(".map").hide();
-            $("#" + $(this).val()).fadeIn(700);
-        }).change();
-    });
-</script>
 </body>
 </html>
