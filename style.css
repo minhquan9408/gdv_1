@@ -8,6 +8,7 @@ text-align: center;
    width: 100%;
     flex-basis: auto;
     flex-wrap: wrap;
+    border-color: darkred;
 
 }
 .container-item{

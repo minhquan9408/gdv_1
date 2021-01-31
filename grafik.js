@@ -1228,7 +1228,8 @@ var test =
         ]
 
     }
-/* Funktionierte Code mit Flächendiagramm
+// Funktionierte Code mit Flächendiagramm
+var all =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  
@@ -1263,7 +1264,7 @@ var test =
       ],
       "projection": {"type": "identity","reflectY": true
       },
-      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "mark": {"type": "geoshape"},
       "selection": {
         "pts": {
           "type": "single",
@@ -1848,4 +1849,4 @@ var test =
 }   
   ]
 }
- */
+
