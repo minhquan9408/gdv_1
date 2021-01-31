@@ -1242,8 +1242,8 @@ var test =
   },
   "hconcat": [
     {
-        "width":200,
-        "height": 400,
+       "width": 290,
+      "height": 200,
       "transform": [
 
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
@@ -1262,7 +1262,9 @@ var test =
           "as": "geo"
         }
       ],
-      "projection": {"type": "identity","reflectY": true},
+      "projection": {"type": "identity","reflectY": true
+
+      },
       "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
       "selection": {
         "pts": {
@@ -1296,8 +1298,8 @@ var test =
       }
     },
     {
-        "width":100,
-        "height":300,
+        "width": 200,
+      "height": 200,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
         {"calculate": "datum.Kennzahl *100", "as": "prozent"},
@@ -1320,12 +1322,13 @@ var test =
           "type": "quantitative",
           "axis": {"labelFontSize": 13, "titleFontSize": 16}
         },
-        "color": {"field": "Stadtteil", "scale": {"scheme": "tableau20"}}
+        "color": {"field": "Stadtteil", "scale": {"scheme": "tableau20"}, "legend":{"orient":"top"}}
       }
     },
     {
         "description": "Flächendiagramm für E West, Bos en Lommer",
-        "width": 300, "height": 280,
+        "width": 200,
+      "height": 200,
         "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
             "format": {
                 "type": "json",
@@ -1355,7 +1358,7 @@ var test =
                 },
                 "y": {
                     "aggregate":"sum",
-                    "title": "Bijlmer-Centrum, Amstel III",
+                    "title": "",
                     "field": "Kennzahl",
                     "type":"quantitative",
                     "axis": {
@@ -1392,6 +1395,7 @@ var test =
                         "field": "Dimension",
                         "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
                         "legend":{
+
                             "disable":"true"
                         }
                     },
