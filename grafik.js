@@ -967,270 +967,7 @@ var map12 ={
         ]
     }
 }
-var map11 ={
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":{
-        "text":"Anteil mit Migrationshintergrund von Jahr 2011 in Prozent",
-        "fontSize": 20
-    },
-    "width": 600,
-    "height": 900,
-    "data": {
-        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
-        "format":{
-            "type":"json",
-            "parse":{
-                "Jahr":"number"
-            }
-        }
-    },
-    "transform": [
-        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-        {"filter":"datum.Jahr ===2011"},
-        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
-        {
-            "lookup": "Stadtteil",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
-                    "format": {
-                        "property": "features"
-                    }
-                },
-                "key": "properties.Gebied_naam"
-            },
-            "as": "geo"
-        }
-    ],
-    "projection": {"type": "mercator"},
-    "mark": {
-        "type":"geoshape",
-        "stroke":"black",
-        "strokeWidth": 0.2
-    },
-    "encoding": {
-        "strokeWidth": {
-            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
-            ]
-        },
-        "shape": {"field": "geo", "type": "geojson"},
-        "color": {"field": "prozent",
-            "title":"%",
-            "type": "quantitative",
-            "legend":{
-                "labelFontSize": 13,
-                "titleFontSize": 20
-
-            }},
-        "tooltip": [
-            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
-            {"field":"prozent",
-                "format":".1f",
-                "type": "quantitative",
-                "title":"Anteil in %"}
-        ]
-    }
-}
-var map10 ={
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title":{
-        "text":"Anteil mit Migrationshintergrund von Jahr 2010 in Prozent",
-        "fontSize": 20
-    },
-    "width": 600,
-    "height": 900,
-    "data": {
-        "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
-        "format":{
-            "type":"json",
-            "parse":{
-                "Jahr":"number"
-            }
-        }
-    },
-    "transform": [
-        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-        {"filter":"datum.Jahr ===2010"},
-        {"calculate": "datum.Kennzahl *100", "as":"prozent"},
-        {
-            "lookup": "Stadtteil",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
-                    "format": {
-                        "property": "features"
-                    }
-                },
-                "key": "properties.Gebied_naam"
-            },
-            "as": "geo"
-        }
-    ],
-    "projection": {"type": "mercator"},
-    "mark": {
-        "type":"geoshape",
-        "stroke":"black",
-        "strokeWidth": 0.2
-    },
-    "encoding": {
-        "strokeWidth": {
-            "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='IJburg, Zeeburgereiland' ||datum.Stadtteil==='Bijlmer-Centrum' ||datum.Stadtteil==='Amstel III'" , "value": 2.9}
-            ]
-        },
-        "shape": {"field": "geo", "type": "geojson"},
-        "color": {"field": "prozent",
-            "title":"%",
-            "type": "quantitative",
-            "legend":{
-                "labelFontSize": 13,
-                "titleFontSize": 20
-
-            }},
-        "tooltip": [
-            {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
-            {"field":"prozent",
-                "format":".1f",
-                "type": "quantitative",
-                "title":"Anteil in %"}
-        ]
-    }
-}
-
-var test =
-    {
-        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-        "title":{
-            "text":"Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
-            "fontSize": 20
-        },
-
-        "data": {
-            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
-            "format":{
-                "type":"json",
-                "parse":{
-                    "Jahr":"number"
-                }
-            }
-        },
-        "hconcat":[
-            {
-                "transform": [
-                    {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-
-                    {"calculate": "datum.Kennzahl *100", "as":"prozent"},
-                    {
-                        "lookup": "Stadtteil",
-                        "from": {
-                            "data": {
-                                "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
-                                "format": {
-                                    "property": "features"
-                                }
-                            },
-                            "key": "properties.Gebied_naam"
-                        },
-                        "as": "geo"
-                    }
-                ],
-
-                "projection": {"type": "mercator"},
-                "mark": {
-                    "type":"geoshape",
-                    "stroke":"black",
-                    "strokeWidth": 0.2
-                },
-                "selection": {
-                    "pts": {"type": "single" , "fields": ["Stadtteil"], "empty": "none", "clear":"dbclick"
-
-                    }
-                },
-                "encoding": {
-
-                    "strokeWidth": {
-                        "condition":[ {"test":"datum.Stadtteil" , "value": 0.2}
-                        ]
-                    },
-
-                    "shape": {"field": "geo", "type": "geojson"},
-
-                    "color": {
-                        "condition":{
-                            "selection":"pts"
-
-
-                        },
-                        "field": "prozent",
-                        "title":"%",
-                        "type": "quantitative",
-                        "legend":{
-                            "labelFontSize": 13,
-                            "titleFontSize": 20
-                        }
-
-
-
-                    },
-                    "tooltip": [
-                        {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
-                        {"field":"prozent",
-                            "format":".1f",
-                            "type": "quantitative",
-                            "title":"Anteil in %"}
-                    ]
-                }
-            },
-            {
-                "transform": [
-                    {"filter":"datum.Dimension ==='Mit Migrationshintergrund'"},
-                    {"filter":{"selection":"pts"}},
-                    {"calculate": "datum.Kennzahl *100", "as":"prozent"},
-                    {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
-
-                ],
-                "mark": {"type":"area","line":true, "point" : true },
-
-                "encoding": {
-                    "x": {
-                        "title":"",
-                        "field": "Jahr",
-                        "type": "ordinal",
-                        "timeUnit" :"year",
-                        "axis": {
-                            "labelFontSize":13
-                        }
-
-                    },
-                    "y": {
-
-                        "field": "prozent",
-                        "title":"",
-                        "type":"quantitative",
-                        "axis": {
-                            "labelFontSize":13,
-                            "titleFontSize":16
-                        }
-                    },
-                    "color": {
-                        "field": "Stadtteil",
-                        "scale": {"scheme": "paired"},
-                        "legend":{
-                            "disable":"true"
-                        }
-                    },
-                    "tooltip":[
-                        {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
-                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
-                    ]
-                }
-            }
-
-        ]
-
-    }
-// Funktionierte Code mit Flächendiagramm
-var all =
-{
+var map11 ={{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  
   "data": {
@@ -1264,7 +1001,7 @@ var all =
       ],
       "projection": {"type": "identity","reflectY": true
       },
-      "mark": {"type": "geoshape"},
+      "mark": {"type": "geoshape", "stroke": "greenyellow", "strokeWidth": 0.2},
       "selection": {
         "pts": {
           "type": "single",
@@ -1274,10 +1011,10 @@ var all =
         }
       },
       "encoding": {
-
+"stroke": {"condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": "blue"}, {"selection":"pts", "value": "blue"}] , "value":"black"
+       },
         "strokeWidth": {
-          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}
-            , {"selection":"pts", "value": 2.0}] , "value":0.5
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}, {"selection":"pts", "value": 2.0}] , "value":0.5
         },
 
         "shape": {"field": "geo", "type": "geojson"},
@@ -1334,10 +1071,13 @@ var all =
         }
       },
       "encoding": {
-       "strokeWidth": {
-          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
-            , {"selection":"pts", "value": 1.5}] , "value":0.5
+      
+"stroke": {"condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": "blue"}, {"selection":"pts", "value": "blue"}] , "value":"black"
+       },
+        "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}, {"selection":"pts", "value": 2.0}] , "value":0.5
         },
+
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
           "field": "prozent",
@@ -1391,10 +1131,13 @@ var all =
         }
       },
       "encoding": {
-       "strokeWidth": {
-          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
-            , {"selection":"pts", "value": 1.5}] , "value":0.5
+      
+"stroke": {"condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": "blue"}, {"selection":"pts", "value": "blue"}] , "value":"black"
+       },
+        "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}, {"selection":"pts", "value": 2.0}] , "value":0.5
         },
+
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
           "field": "prozent",
@@ -1452,10 +1195,13 @@ var all =
         }
       },
       "encoding": {
-         "strokeWidth": {
-          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
-            , {"selection":"pts", "value": 1.5}] , "value":0.5
+        
+"stroke": {"condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": "blue"}, {"selection":"pts", "value": "blue"}] , "value":"black"
+       },
+        "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}, {"selection":"pts", "value": 2.0}] , "value":0.5
         },
+
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
           "field": "prozent",
@@ -1509,10 +1255,13 @@ var all =
         }
       },
       "encoding": {
-         "strokeWidth": {
-          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
-            , {"selection":"pts", "value": 1.5}] , "value":0.5
+        
+"stroke": {"condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": "blue"}, {"selection":"pts", "value": "blue"}] , "value":"black"
+       },
+        "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}, {"selection":"pts", "value": 2.0}] , "value":0.5
         },
+
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
           "field": "prozent",
@@ -1849,4 +1598,5 @@ var all =
 }   
   ]
 }
+
 
