@@ -1235,19 +1235,21 @@ var test =
     "text": "Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
     "fontSize": 20
   },
-
   "data": {
     "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
     "format": {"type": "json", "parse": {"Jahr": "number"}}
   },
   "hconcat": [
     {
-       "width": 290,
-      "height": 200,
+      "vconcat":[
+        { "title":{
+          "text":  "Migrationsanteil nach Stadttei in %",
+          "subtitle":"2019"},
+ "width": 400,
+      "height": 300,
       "transform": [
-
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
-        {"filter": "datum.Jahr ===2010"},
+        {"filter": "datum.Jahr ===2019"},
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
         {"calculate": "datum.Kennzahl *100", "as": "prozent"},
         {
@@ -1263,7 +1265,6 @@ var test =
         }
       ],
       "projection": {"type": "identity","reflectY": true
-
       },
       "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
       "selection": {
@@ -1280,7 +1281,6 @@ var test =
         },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
-
           "field": "prozent",
           "title": "%",
           "type": "quantitative",
@@ -1296,9 +1296,279 @@ var test =
           }
         ]
       }
-    },
-    {
-        "width": 200,
+        },{
+          "hconcat": [{ 
+           "title":{
+          "text":"2017",
+          "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
+
+"width": 200,
+      "height": 100,
+      "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": "datum.Jahr ===2017"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {
+          "lookup": "Stadtteil",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+              "format": {"property": "features"}
+            },
+            "key": "properties.Gebied"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {"type": "identity","reflectY": true
+      },
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "selection": {
+        "pts": {
+          "type": "single",
+          "fields": ["Stadtteil"],
+          "empty": "none",
+          "clear": "dbclick"
+        }
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+        },
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "prozent",
+          "title": "%",
+          "type": "quantitative",
+          "legend": {"labelFontSize": 13, "titleFontSize": 20}
+        },
+        "tooltip": [
+          {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+          {
+            "field": "prozent",
+            "format": ".1f",
+            "type": "quantitative",
+            "title": "Anteil in %"
+          }
+        ]
+      }
+          },{
+             "title":{
+          "text":"2015",
+          "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
+
+"width": 200,
+      "height": 100,
+      "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": "datum.Jahr ===2015"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {
+          "lookup": "Stadtteil",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+              "format": {"property": "features"}
+            },
+            "key": "properties.Gebied"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {"type": "identity","reflectY": true
+      },
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "selection": {
+        "pts": {
+          "type": "single",
+          "fields": ["Stadtteil"],
+          "empty": "none",
+          "clear": "dbclick"
+        }
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+        },
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "prozent",
+          "title": "%",
+          "type": "quantitative",
+          "legend": {"labelFontSize": 13, "titleFontSize": 20}
+        },
+        "tooltip": [
+          {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+          {
+            "field": "prozent",
+            "format": ".1f",
+            "type": "quantitative",
+            "title": "Anteil in %"
+          }
+        ]
+      }
+          }
+          
+          ]
+        },{
+          "hconcat":[{
+ "title":{
+          "text":"2013",
+          "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
+
+"width": 200,
+      "height": 100,
+      "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": "datum.Jahr ===2013"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {
+          "lookup": "Stadtteil",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+              "format": {"property": "features"}
+            },
+            "key": "properties.Gebied"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {"type": "identity","reflectY": true
+      },
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "selection": {
+        "pts": {
+          "type": "single",
+          "fields": ["Stadtteil"],
+          "empty": "none",
+          "clear": "dbclick"
+        }
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+        },
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "prozent",
+          "title": "%",
+          "type": "quantitative",
+          "legend": {"labelFontSize": 13, "titleFontSize": 20}
+        },
+        "tooltip": [
+          {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+          {
+            "field": "prozent",
+            "format": ".1f",
+            "type": "quantitative",
+            "title": "Anteil in %"
+          }
+        ]
+      }
+          },{
+             "title":{
+          "text":"2011",
+          "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
+
+            "width": 200,
+      "height": 100,
+      "transform": [
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": "datum.Jahr ===2011"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {
+          "lookup": "Stadtteil",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+              "format": {"property": "features"}
+            },
+            "key": "properties.Gebied"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {"type": "identity","reflectY": true
+      },
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "selection": {
+        "pts": {
+          "type": "single",
+          "fields": ["Stadtteil"],
+          "empty": "none",
+          "clear": "dbclick"
+        }
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+        },
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "field": "prozent",
+          "title": "%",
+          "type": "quantitative",
+          "legend": {"labelFontSize": 13, "titleFontSize": 20}
+        },
+        "tooltip": [
+          {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+          {
+            "field": "prozent",
+            "format": ".1f",
+            "type": "quantitative",
+            "title": "Anteil in %"
+          }
+        ]
+      }
+          }]
+          
+          
+        }
+      ]
+      
+   }, { 
+      "vconcat":[
+        {
+          "title":{
+          "text":  "Migrationsanteil in %",
+          "subtitle":"Buitenveldert, Zuidas"},
+         
+       "width": 200,
+      "height": 200,
+      "transform": [
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+         {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"}
+      ],
+      "mark": {"type": "area", "line": true, "point": true},
+      "encoding": {
+        "x": {
+          "title": "",
+          "field": "Jahr",
+          "type": "ordinal",
+          "timeUnit": "year",
+          "axis": {"labelFontSize": 13}
+        },
+        "y": {
+            "scale":{"domain":[0,85]},
+          "field": "prozent",
+          "title": "",
+          "type": "quantitative",
+          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+        }
+      }
+    },{
+"title":{
+          "text":"Aus der Karte einen Stadtteil auswählen",
+          "fontWeight":{"bold": "normal"},
+          "fontSize":12.5},
+
       "height": 200,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
@@ -1321,27 +1591,53 @@ var test =
           "title": "",
           "type": "quantitative",
           "axis": {"labelFontSize": 13, "titleFontSize": 16}
-        },
-        "color": {"field": "Stadtteil", "scale": {"scheme": "tableau20"}, "legend":{"orient":"top"}}
+        }
       }
-    },
+    
+    },{
+"title":{
+          "text":"Bijlmer-Centrum, Amstel III",
+          "fontWeight":{"bold": "normal"},
+          "fontSize":12.5},
+       "width": 200,
+      "height": 200,
+      "transform": [
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+          {"filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"}
+      ],
+      "mark": {"type": "area", "line": true, "point": true},
+      "encoding": {
+        "x": {
+          "title": "",
+          "field": "Jahr",
+          "type": "ordinal",
+          "timeUnit": "year",
+          "axis": {"labelFontSize": 13}
+        },
+        "y": {
+            "scale":{"domain":[0,85]},
+          "field": "prozent",
+          "title": "",
+          "type": "quantitative",
+          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+        }
+      }
+    }
+    ]},
     {
-        "description": "Flächendiagramm für E West, Bos en Lommer",
+      "vconcat":[
+        
+        {
+          
         "width": 200,
       "height": 200,
-        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
-            "format": {
-                "type": "json",
-                "parse": {
-                    "Jahr": "number"
-                }}
-        },
         "transform": [
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
-            {"filter":"datum.Dimension !== 'Mit'"},
+            {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
             {"filter":"datum.Dimension !== 'Saldo'"},
-
-            {"filter": {"selection":"pts"}}
+             {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"}
         ],
         "layer": [
             { "mark": {"type":"line","line":true  },
@@ -1354,9 +1650,9 @@ var test =
                     "axis": {
                         "labelFontSize":13
                     }
-
                 },
                 "y": {
+                  "scale": {"domain":[-16000,15700]},
                     "aggregate":"sum",
                     "title": "",
                     "field": "Kennzahl",
@@ -1365,7 +1661,6 @@ var test =
                         "labelFontSize":13,
                         "titleFontSize":16
                     }
-
                 }
             }},
             {
@@ -1379,7 +1674,6 @@ var test =
                         "axis": {
                             "labelFontSize":13
                         }
-
                     },
                     "y": {
                         "title": "",
@@ -1390,25 +1684,158 @@ var test =
                             "titleFontSize":16
                         }
                     },
-                    "color": {
-                        "sort": {"field": "Dimension", "order":"descending"},
+                   "color": {
                         "field": "Dimension",
-                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
-                        "legend":{
-
-                            "disable":"true"
-                        }
-                    },
+                        "legend":null,
+                        "scale": {
+                          "range": [ "#6DC568","#199013","#E17C75","#A42016"], "reverse":true}
+                          
+                    }
+                       ,   
                     "tooltip":[
                         {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
                         {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
                     ]
                 }
             }
-
         ]
-    }
-
+    },{
+ "width": 200,
+      "height": 200,
+        "transform": [
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+            {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
+            {"filter": {"selection":"pts"}}
+        ],
+        "layer": [
+            { "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
+                }
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+                    },
+                    "y": {
+                       "scale": {"domain":[-16000,15700]},
+                        "title": "",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    
+                    
+                    }
+                       , 
+                       "color": {
+                        "field": "Dimension"
+                    }
+                       ,     
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
+                }
+            }
+        ]
+    },{
+       "width": 200,
+      "height": 200,
+         "transform": [
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+            {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
+             {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"}
+        ],
+        "layer": [
+            { "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
+                }
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+                    },
+                    "y": {
+                      "scale": {"domain":[-16000,15700]},
+                        "title": "",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                         "color": {
+                        "field": "Dimension"
+                    }
+                       ,   
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
+                }
+            }
+        ]
+    
+    }]
+}   
   ]
 }
+  
  */
