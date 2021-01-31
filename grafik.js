@@ -1246,7 +1246,7 @@ var test =
           "text":  "Migrationsanteil nach Stadttei in %",
           "subtitle":"2019"},
  "width": 400,
-      "height": 300,
+      "height": 215,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
         {"filter": "datum.Jahr ===2019"},
@@ -1568,7 +1568,7 @@ var test =
           "text":"Aus der Karte einen Stadtteil auswählen",
           "fontWeight":{"bold": "normal"},
           "fontSize":12.5},
-
+"width":200, 
       "height": 200,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
@@ -1630,7 +1630,9 @@ var test =
       "vconcat":[
         
         {
-          
+          "title":{
+          "text":  "Umzüge",
+          "subtitle":"Buitenveldert, Zuidas"},
         "width": 200,
       "height": 200,
         "transform": [
@@ -1700,6 +1702,11 @@ var test =
             }
         ]
     },{
+      "title":{
+          "text":"Aus der Karte einen Stadtteil auswählen",
+          "fontWeight":{"bold": "normal"},
+          "fontSize":12.5},
+
  "width": 200,
       "height": 200,
         "transform": [
@@ -1768,13 +1775,18 @@ var test =
             }
         ]
     },{
+      "title":{
+          "text":"Bijlmer-Centrum, Amstel III",
+          "fontWeight":{"bold": "normal"},
+          "fontSize":12.5},
+
        "width": 200,
       "height": 200,
          "transform": [
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
             {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
             {"filter":"datum.Dimension !== 'Saldo'"},
-             {"filter": "datum.Stadtteil ==='Buitenveldert, Zuidas'"}
+             {"filter": "datum.Stadtteil ==='Bijlmer-Centrum, Amstel III'"}
         ],
         "layer": [
             { "mark": {"type":"line","line":true  },
