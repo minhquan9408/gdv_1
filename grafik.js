@@ -1231,10 +1231,7 @@ var test =
 /* Funktionierte Code mit Flächendiagramm
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": {
-    "text": "Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
-    "fontSize": 20
-  },
+ 
   "data": {
     "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
     "format": {"type": "json", "parse": {"Jahr": "number"}}
@@ -1245,7 +1242,7 @@ var test =
         { "title":{
           "text":  "Migrationsanteil nach Stadttei in %",
           "subtitle":"2019"},
- "width": 400,
+ "width": 500,
       "height": 215,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
@@ -1276,9 +1273,12 @@ var test =
         }
       },
       "encoding": {
+
         "strokeWidth": {
-          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 2.0}
+            , {"selection":"pts", "value": 2.0}] , "value":0.5
         },
+
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
           "field": "prozent",
@@ -1302,7 +1302,7 @@ var test =
           "text":"2017",
           "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
 
-"width": 200,
+"width": 250,
       "height": 100,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
@@ -1333,8 +1333,9 @@ var test =
         }
       },
       "encoding": {
-        "strokeWidth": {
-          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+       "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
+            , {"selection":"pts", "value": 1.5}] , "value":0.5
         },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
@@ -1358,7 +1359,7 @@ var test =
           "text":"2015",
           "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
 
-"width": 200,
+"width": 250,
       "height": 100,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
@@ -1389,8 +1390,9 @@ var test =
         }
       },
       "encoding": {
-        "strokeWidth": {
-          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+       "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
+            , {"selection":"pts", "value": 1.5}] , "value":0.5
         },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
@@ -1418,7 +1420,7 @@ var test =
           "text":"2013",
           "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
 
-"width": 200,
+"width": 250,
       "height": 100,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
@@ -1449,8 +1451,9 @@ var test =
         }
       },
       "encoding": {
-        "strokeWidth": {
-          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+         "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
+            , {"selection":"pts", "value": 1.5}] , "value":0.5
         },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
@@ -1474,8 +1477,8 @@ var test =
           "text":"2011",
           "fontWeight":{"bold": "normal"}, "fontSize":12.5}, 
 
-            "width": 200,
-      "height": 100,
+            "width": 250,
+      "height": 200,
       "transform": [
         {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
         {"filter": "datum.Jahr ===2011"},
@@ -1505,8 +1508,9 @@ var test =
         }
       },
       "encoding": {
-        "strokeWidth": {
-          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+         "strokeWidth": {
+          "condition":[ {"test":"datum.Stadtteil==='Buitenveldert, Zuidas' ||datum.Stadtteil==='Bijlmer-Centrum, Amstel III'" , "value": 1.5}
+            , {"selection":"pts", "value": 1.5}] , "value":0.5
         },
         "shape": {"field": "geo", "type": "geojson"},
         "color": {
@@ -1538,7 +1542,7 @@ var test =
           "text":  "Migrationsanteil in %",
           "subtitle":"Buitenveldert, Zuidas"},
          
-       "width": 200,
+       "width": 220,
       "height": 200,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
@@ -1560,7 +1564,7 @@ var test =
           "field": "prozent",
           "title": "",
           "type": "quantitative",
-          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+          "axis": {"labelFontSize": 13}
         }
       }
     },{
@@ -1568,8 +1572,8 @@ var test =
           "text":"Aus der Karte einen Stadtteil auswählen",
           "fontWeight":{"bold": "normal"},
           "fontSize":12.5},
-"width":200, 
-      "height": 200,
+"width":220, 
+      "height": 190,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
         {"calculate": "datum.Kennzahl *100", "as": "prozent"},
@@ -1590,7 +1594,7 @@ var test =
           "field": "prozent",
           "title": "",
           "type": "quantitative",
-          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+          "axis": {"labelFontSize": 13}
         }
       }
     
@@ -1599,7 +1603,7 @@ var test =
           "text":"Bijlmer-Centrum, Amstel III",
           "fontWeight":{"bold": "normal"},
           "fontSize":12.5},
-       "width": 200,
+       "width": 220,
       "height": 200,
       "transform": [
         {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
@@ -1621,7 +1625,7 @@ var test =
           "field": "prozent",
           "title": "",
           "type": "quantitative",
-          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+          "axis": {"labelFontSize": 13}
         }
       }
     }
@@ -1633,8 +1637,8 @@ var test =
           "title":{
           "text":  "Umzüge",
           "subtitle":"Buitenveldert, Zuidas"},
-        "width": 200,
-      "height": 200,
+        "width": 220,
+      "height": 190,
         "transform": [
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
             {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
@@ -1660,8 +1664,7 @@ var test =
                     "field": "Kennzahl",
                     "type":"quantitative",
                     "axis": {
-                        "labelFontSize":13,
-                        "titleFontSize":16
+                        "labelFontSize":13
                     }
                 }
             }},
@@ -1682,8 +1685,7 @@ var test =
                         "field": "Kennzahl",
                         "type":"quantitative",
                         "axis": {
-                            "labelFontSize":13,
-                            "titleFontSize":16
+                            "labelFontSize":13
                         }
                     },
                    "color": {
@@ -1706,9 +1708,8 @@ var test =
           "text":"Aus der Karte einen Stadtteil auswählen",
           "fontWeight":{"bold": "normal"},
           "fontSize":12.5},
-
- "width": 200,
-      "height": 200,
+ "width": 220,
+      "height": 190,
         "transform": [
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
             {"filter":"datum.Dimension !== 'Mit Migrationshintergrund'"},
@@ -1779,8 +1780,7 @@ var test =
           "text":"Bijlmer-Centrum, Amstel III",
           "fontWeight":{"bold": "normal"},
           "fontSize":12.5},
-
-       "width": 200,
+       "width": 220,
       "height": 200,
          "transform": [
             {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
@@ -1806,8 +1806,7 @@ var test =
                     "field": "Kennzahl",
                     "type":"quantitative",
                     "axis": {
-                        "labelFontSize":13,
-                        "titleFontSize":16
+                        "labelFontSize":13
                     }
                 }
             }},
@@ -1849,5 +1848,4 @@ var test =
 }   
   ]
 }
-  
  */
