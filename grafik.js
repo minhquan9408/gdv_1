@@ -1095,3 +1095,316 @@ var map10 ={
         ]
     }
 }
+
+var test =
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "title":{
+            "text":"Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
+            "fontSize": 20
+        },
+
+        "data": {
+            "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/data/prototyp2.json",
+            "format":{
+                "type":"json",
+                "parse":{
+                    "Jahr":"number"
+                }
+            }
+        },
+        "hconcat":[
+            {
+                "transform": [
+                    {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+
+                    {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+                    {
+                        "lookup": "Stadtteil",
+                        "from": {
+                            "data": {
+                                "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/Fadi/geojson.json",
+                                "format": {
+                                    "property": "features"
+                                }
+                            },
+                            "key": "properties.Gebied_naam"
+                        },
+                        "as": "geo"
+                    }
+                ],
+
+                "projection": {"type": "mercator"},
+                "mark": {
+                    "type":"geoshape",
+                    "stroke":"black",
+                    "strokeWidth": 0.2
+                },
+                "selection": {
+                    "pts": {"type": "single" , "fields": ["Stadtteil"], "empty": "none", "clear":"dbclick"
+
+                    }
+                },
+                "encoding": {
+
+                    "strokeWidth": {
+                        "condition":[ {"test":"datum.Stadtteil" , "value": 0.2}
+                        ]
+                    },
+
+                    "shape": {"field": "geo", "type": "geojson"},
+
+                    "color": {
+                        "condition":{
+                            "selection":"pts"
+
+
+                        },
+                        "field": "prozent",
+                        "title":"%",
+                        "type": "quantitative",
+                        "legend":{
+                            "labelFontSize": 13,
+                            "titleFontSize": 20
+                        }
+
+
+
+                    },
+                    "tooltip": [
+                        {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+                        {"field":"prozent",
+                            "format":".1f",
+                            "type": "quantitative",
+                            "title":"Anteil in %"}
+                    ]
+                }
+            },
+            {
+                "transform": [
+                    {"filter":"datum.Dimension ==='Mit Migrationshintergrund'"},
+                    {"filter":{"selection":"pts"}},
+                    {"calculate": "datum.Kennzahl *100", "as":"prozent"},
+                    {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"}
+
+                ],
+                "mark": {"type":"area","line":true, "point" : true },
+
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+
+                    },
+                    "y": {
+
+                        "field": "prozent",
+                        "title":"",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                    "color": {
+                        "field": "Stadtteil",
+                        "scale": {"scheme": "paired"},
+                        "legend":{
+                            "disable":"true"
+                        }
+                    },
+                    "tooltip":[
+                        {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
+                }
+            }
+
+        ]
+
+    }
+/* Funktionierte Code mit Flächendiagramm
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {
+    "text": "Anteil mit Migrationshintergrund von Jahr 2019 in Prozent",
+    "fontSize": 20
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
+    "format": {"type": "json", "parse": {"Jahr": "number"}}
+  },
+  "hconcat": [
+    {
+        "width":200,
+        "height": 400,
+      "transform": [
+
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": "datum.Jahr ===2010"},
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {
+          "lookup": "Stadtteil",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/geojson.json",
+              "format": {"property": "features"}
+            },
+            "key": "properties.Gebied"
+          },
+          "as": "geo"
+        }
+      ],
+      "projection": {"type": "identity","reflectY": true},
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.2},
+      "selection": {
+        "pts": {
+          "type": "single",
+          "fields": ["Stadtteil"],
+          "empty": "none",
+          "clear": "dbclick"
+        }
+      },
+      "encoding": {
+        "strokeWidth": {
+          "condition": [{"selection":"pts", "value": 1.5}] , "value":0.5
+        },
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+
+          "field": "prozent",
+          "title": "%",
+          "type": "quantitative",
+          "legend": {"labelFontSize": 13, "titleFontSize": 20}
+        },
+        "tooltip": [
+          {"field": "Stadtteil", "type": "nominal", "title": "Stadtteil"},
+          {
+            "field": "prozent",
+            "format": ".1f",
+            "type": "quantitative",
+            "title": "Anteil in %"
+          }
+        ]
+      }
+    },
+    {
+        "width":100,
+        "height":300,
+      "transform": [
+        {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+        {"calculate": "datum.Kennzahl *100", "as": "prozent"},
+        {"filter": "datum.Dimension ==='Mit Migrationshintergrund'"},
+        {"filter": {"selection": "pts"}}
+      ],
+      "mark": {"type": "area", "line": true, "point": true},
+      "encoding": {
+        "x": {
+          "title": "",
+          "field": "Jahr",
+          "type": "ordinal",
+          "timeUnit": "year",
+          "axis": {"labelFontSize": 13}
+        },
+        "y": {
+            "scale":{"domain":[0,85]},
+          "field": "prozent",
+          "title": "",
+          "type": "quantitative",
+          "axis": {"labelFontSize": 13, "titleFontSize": 16}
+        },
+        "color": {"field": "Stadtteil", "scale": {"scheme": "tableau20"}}
+      }
+    },
+    {
+        "description": "Flächendiagramm für E West, Bos en Lommer",
+        "width": 300, "height": 280,
+        "data": {"url": "https://raw.githubusercontent.com/minhquan9408/gdv_1/quan-new/data/prototyp2.json",
+            "format": {
+                "type": "json",
+                "parse": {
+                    "Jahr": "number"
+                }}
+        },
+        "transform": [
+            {"calculate": "datetime(datum.Jahr, 1)", "as": "Jahr"},
+            {"filter":"datum.Dimension !== 'Mit'"},
+            {"filter":"datum.Dimension !== 'Saldo'"},
+
+            {"filter": {"selection":"pts"}}
+        ],
+        "layer": [
+            { "mark": {"type":"line","line":true  },
+            "encoding": {
+                "x": {
+                    "title":"",
+                    "field": "Jahr",
+                    "type": "ordinal",
+                    "timeUnit" :"year",
+                    "axis": {
+                        "labelFontSize":13
+                    }
+
+                },
+                "y": {
+                    "aggregate":"sum",
+                    "title": "Bijlmer-Centrum, Amstel III",
+                    "field": "Kennzahl",
+                    "type":"quantitative",
+                    "axis": {
+                        "labelFontSize":13,
+                        "titleFontSize":16
+                    }
+
+                }
+            }},
+            {
+                "mark": {"type":"area","line":true  },
+                "encoding": {
+                    "x": {
+                        "title":"",
+                        "field": "Jahr",
+                        "type": "ordinal",
+                        "timeUnit" :"year",
+                        "axis": {
+                            "labelFontSize":13
+                        }
+
+                    },
+                    "y": {
+                        "title": "",
+                        "field": "Kennzahl",
+                        "type":"quantitative",
+                        "axis": {
+                            "labelFontSize":13,
+                            "titleFontSize":16
+                        }
+                    },
+                    "color": {
+                        "sort": {"field": "Dimension", "order":"descending"},
+                        "field": "Dimension",
+                        "scale": {"range": [ "#81D177","#17850A","#E17C75","#C12015"]},
+                        "legend":{
+                            "disable":"true"
+                        }
+                    },
+                    "tooltip":[
+                        {"field": "Kennzahl","type":"quantitative","title":"Anzahl"},
+                        {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                    ]
+                }
+            }
+
+        ]
+    }
+
+  ]
+}
+ */
