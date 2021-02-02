@@ -349,7 +349,11 @@ var map11 =
                                 "title": "",
                                 "type": "quantitative",
                                 "axis": {"labelFontSize": 13}
-                            }
+                            },
+                            "tooltip":[
+                                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
+                                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                            ]
                         }
                     },{
                         "title":{
@@ -379,7 +383,11 @@ var map11 =
                                 "title": "",
                                 "type": "quantitative",
                                 "axis": {"labelFontSize": 13}
-                            }
+                            },
+                            "tooltip":[
+                                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
+                                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                            ]
                         }
 
                     },{
@@ -410,7 +418,11 @@ var map11 =
                                 "title": "",
                                 "type": "quantitative",
                                 "axis": {"labelFontSize": 13}
-                            }
+                            },
+                            "tooltip":[
+                                {"field": "prozent","type":"quantitative","title":"Mit Migrationshintergrund","format":".1f"},
+                                {"field": "Jahr", "type": "ordinal","title":"Jahr","timeUnit":"year"}
+                            ]
                         }
                     }
                 ]},

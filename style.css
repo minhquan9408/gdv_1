@@ -3,6 +3,12 @@
     flex-direction: column;
     flex-grow: 2;
 }
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
 .containerTitle{
     display: inline-flex;
     width: 100%;
@@ -21,8 +27,9 @@
     flex-grow: 1;
     justify-content: center;
     margin-bottom: auto;
+   
 }
 img.resize{
     width: auto;
-    height: 50%;
+    height: 10%;
 }
